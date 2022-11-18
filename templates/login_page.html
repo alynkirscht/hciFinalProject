@@ -9,6 +9,16 @@
  <!-- <link rel="stylesheet" href="css/custom.css" type="text/css"> -->
   <!-- Add icon library -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    input:focus {
+    outline: 5px solid crimson;
+    }
+
+    select:focus{
+      outline: 5px solid crimson;
+    }
+
+  </style>
 </head>
 
 <body>
@@ -17,30 +27,29 @@
       <form action="#" id="frmLogin" method="post">
         <fieldset>
           <p>
-            <i class="fa fa-headphones icon"></i>
-            <select id="lstMusicPlatform" name="lstMusicPlatform">
-              <option value="" disabled selected hidden>Choose a Music Platform</option>
+            <legend></legend> 
+            <label for="lstMusicPlatform">Music platform</label> 
+            <select id="lstMusicPlatform" name="lstMusicPlatform" title="Choose music platform" autocomplete="on">
+              <option value="" disabled selected hidden></option>
               <option value="AmazonPrimeMusic">Amazon Prime Music</option>
               <option value="AppleMusic">Apple Music</option>
               <option value="iHeartRadio">iHeart Radio</option>
               <option value="Pandora">Pandora</option>
               <option value="Spotify">Spotify</option>
               <option value="Youtube">Youtube</option>
-
             </select>
           </p>
           <p>
-            <i class="fa fa-user icon"></i>
-            <input type="text" placeholder="Username" name="txtUsername" id="txtUsername">
+            <label for="txtUsername">Username</label> 
+            <input type="text" title="Type username here" autocomplete="username" name="txtUsername" id="txtUsername">
           </p>
-
           <p>
-            <i class="fa fa-unlock-alt icon"></i>
-            <input type="password" placeholder="Password" name="pwdPassword" id="pwdPassword">
+            <label for="pwdPassword">Password</label> 
+            <input type="password" title="Type password here" autocomplete="given-name" name="pwdPassword" id="pwdPassword">
           </p>
+          <input id = "btnSubmit" autocomplete="current-password" name = "btnSubmit" type = "submit" value = "Submit">
         </fieldset>
     </article>
   </main>
-
   <footer></footer>
 </body>
