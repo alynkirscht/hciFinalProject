@@ -46,6 +46,8 @@
     color: #ffffff;
     letter-spacing: 0.02em;
     border: none;
+    margin-top: 1em;
+    margin-bottom: .05em;
     }
 
     form h1{
@@ -56,10 +58,11 @@
     }
 
     label{
-    display: block;
+    display: inline;
     margin-top: 2em;
     font-size: 1em;
     font-weight: 500;
+    float: auto;
     }
     input, select{
     display: block;
@@ -83,6 +86,15 @@
     border-radius: .5em;
     cursor: pointer;
     }
+
+    .filter-white{
+      filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(23deg) brightness(108%) contrast(101%);
+      width: 1.5em;
+      float: left;
+      margin-left: 0.5em;
+      margin-right: 0.7em;
+      margin-bottom: .5em;
+    }
   </style>
 </head>
 
@@ -92,6 +104,7 @@
       <form action="language_page" id="frmLogin" method="post">
         <h1>Login Here</h1>
         <fieldset>
+          <img src="static/headphones-solid.svg" class="filter-white" alt="headphones-icon"/>
           <p>
             <legend></legend> 
             <label for="lstMusicPlatform">Music platform</label> 
@@ -105,10 +118,12 @@
               <option value="Youtube">Youtube</option>
             </select>
           </p>
+          <img src="static/user-solid.svg" class="filter-white" alt="user-icon"/>
           <p>
             <label for="txtUsername">Username</label> 
             <input type="text" title="Type username here" autocomplete="username" name="txtUsername" id="txtUsername">
           </p>
+          <img src="static/unlock-solid.svg" class="filter-white" alt="unlock-icon"/>
           <p>
             <label for="pwdPassword">Password</label> 
             <input type="password" title="Type password here" autocomplete="current-password" name="pwdPassword" id="pwdPassword">

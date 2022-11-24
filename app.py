@@ -9,3 +9,7 @@ def login():
 @app.route('/language_page', methods=['POST'])
 def language():
     return render_template("language_page.html")
+
+@app.route('/error', methods=['POST'])
+def error():
+    return render_template("error_page.html")
