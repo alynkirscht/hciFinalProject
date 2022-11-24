@@ -22,66 +22,65 @@
     }
 
     input:focus, select:focus {
-    outline: 5px solid crimson;
-    size: 3em;
+      outline: 5px solid crimson;
+    size: 6em;
+    background-color: white;
+    color: black;
     }
     
     form{
-    height: 520px;
-    width: 400px;
-    background-color: rgba(255,255,255,0.13);
+    height: 34em;
+    width: 24em;
+    background-color: rgba(44,41,42);
     position: absolute;
     transform: translate(-50%,-50%);
     top: 50%;
     left: 50%;
-    border-radius: 10px;
-    backdrop-filter: blur(10px);
-    border: 2px solid rgba(255,255,255,0.1);
-    box-shadow: 0 0 40px rgba(8,7,16,0.6);
-    padding: 50px 35px;
+    border-radius: 1em;
+    border: .2em solid rgba(255,255,255,0.1);
+    padding: 2em 2.5em;
     }
 
     form *{
     font-family: 'Poppins',sans-serif;
     color: #ffffff;
-    letter-spacing: 0.5px;
-    outline: none;
+    letter-spacing: 0.02em;
     border: none;
     }
-    form h3{
-    font-size: 32px;
+
+    form h1{
+    font-size: 2.5em;
     font-weight: 500;
-    line-height: 42px;
+    line-height: 1em;
     text-align: center;
     }
 
     label{
     display: block;
-    margin-top: 30px;
-    font-size: 16px;
+    margin-top: 2em;
+    font-size: 1em;
     font-weight: 500;
     }
     input, select{
     display: block;
-    height: 50px;
+    height: 3.5em;
     width: 100%;
-    background-color: rgba(255,255,255,0.07);
-    border-radius: 3px;
-    padding: 0 10px;
-    margin-top: 8px;
-    font-size: 14px;
+    background-color: rgb(38, 38, 42);
+    padding: 0 1em;
+    margin-top: .8em;
+    font-size: .9em;
     font-weight: 300;
     }
 
     input[type="submit"]{
     margin-top: 2em;
     width: 100%;
-    background-color: rgb(0, 115, 255);
-    color: white;
-    padding: 15px 0;
-    font-size: 18px;
+    background-color: #0073ff;
+    color: black;
+    padding: 1em 0;
+    font-size: 1em;
     font-weight: 600;
-    border-radius: 5px;
+    border-radius: .5em;
     cursor: pointer;
     }
 
@@ -103,7 +102,7 @@
   <main>
     <article>
       <form action="language_page" id="frmLogin" method="post">
-        <h3>Choose a language</h3>
+        <h1>Choose a language</h1>
         <img src="static/language-solid.svg" class="filter-white" alt="language-icon"/>
         <fieldset>
           <p>
