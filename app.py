@@ -12,4 +12,4 @@ def language():
 
 @app.route('/error', methods=['POST'])
 def error():
-    return render_template("error_page.html")
+    return render_template("error_template.html")
