@@ -50,11 +50,19 @@
     margin-bottom: .05em;
     }
 
-    form h1{
-    font-size: 2.5em;
+    h1, h2{
+    font-family: 'Poppins',sans-serif;
     font-weight: 500;
-    line-height: 1em;
     text-align: center;
+    font-size: 2.5em;
+    margin-top: .1em;
+    }
+
+    h1{
+      padding-top: .5em;
+      font-size: 4em;
+      font-weight: bold;
+      color: white;
     }
 
     label{
@@ -100,9 +108,10 @@
 
 <body>
   <main>
+    <h1>Language song recommender</h1>
     <article>
       <form action="language_page" id="frmLogin" method="post">
-        <h1>Login Here</h1>
+        <h2>Login Here</h2>
         <fieldset>
           <img src="static/headphones-solid.svg" class="filter-white" alt="headphones-icon"/>
           <p>
