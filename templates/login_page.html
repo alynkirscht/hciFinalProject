@@ -88,7 +88,7 @@
     width: 100%;
     background-color: #0073ff;
     color: black;
-    padding: 1em 0;
+    padding: .05em 0;
     font-size: 1em;
     font-weight: 600;
     border-radius: .5em;
@@ -110,7 +110,7 @@
   <main>
     <h1>Language song recommender</h1>
     <article>
-      <form action="language_page" id="frmLogin" method="post">
+      <form action="{{ url_for('.login') }}" id="frmLogin" method="post">
         <h2>Login Here</h2>
         <fieldset>
           <img src="static/headphones-solid.svg" class="filter-white" alt="headphones-icon"/>
@@ -138,6 +138,7 @@
             <input type="password" title="Type password here" autocomplete="current-password" name="pwdPassword" id="pwdPassword">
           </p>
           <input id = "btnSubmit" autocomplete="" name = "btnSubmit" type = "submit" value = "Submit">
+          
         </fieldset>
     </article>
   </main>

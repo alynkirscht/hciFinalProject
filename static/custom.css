@@ -1,0 +1,90 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #080710;
+}
+      
+article{
+    padding:1em;
+}
+
+input:focus, select:focus {
+    outline: 5px solid crimson;
+    background-color: white;
+    color: black;
+}
+
+form{
+    height: 34em; 
+    width: 24em;
+    margin: 0 auto;
+    background-color: rgba(44,41,42);
+    border-radius: 1em;
+    border: .2em solid rgba(255,255,255,0.1);
+    padding: 2em 2.5em;
+}
+
+form *{
+    font-family: 'Poppins',sans-serif;
+    color: #ffffff;
+    letter-spacing: 0.02em;
+    border: none;
+}
+
+h1, h2{
+    font-family: 'Poppins',sans-serif;
+    font-weight: 500;
+    line-height: 1em;
+    text-align: center;
+    font-size: 2em;
+    margin-top: .1em;
+}
+
+h1{
+    font-size: 4em;
+    font-weight: bold;
+    color: white;
+}
+
+label{
+    display: block;
+    margin-top: 2em;
+    font-size: 1em;
+    font-weight: 500;
+}
+input, select, option{
+    height: 3.5em;
+    width: 100%;
+    background-color: rgb(59, 59, 65);
+    margin-top: .8em;
+    font-size: .9em;
+    font-weight: 300;
+}
+
+input[type="submit"], input[type="button"]{
+    background-color: #0073ff;
+    color: black;
+    font-size: 1em;
+    font-weight: 600;
+    border-radius: .5em;
+    cursor: pointer;
+}
+
+.filter-white{
+    filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(23deg) brightness(108%) contrast(101%);
+}
+
+img {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#btnAddLanguage{
+    background-color: lightblue;
+    width: 40%;
+}
