@@ -17,6 +17,9 @@ To do:
   * Heart button changes from empty to full if clicked
   * Edit can remove a song
   * Share displays sharing popup
+* Help Page
+  * template help page
+  * Detailed Error report
   
 Tools:
 * To check accesibility: https://mauve.isti.cnr.it/singleValidation.jsp
