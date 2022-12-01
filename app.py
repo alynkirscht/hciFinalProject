@@ -1,5 +1,5 @@
 from flask import *
-import js2py
+
 
 app = Flask(__name__)
 
@@ -32,3 +32,7 @@ def error():
 @app.route('/languages', methods=['GET', 'POST'])
 def languages():
     return render_template("suggested_playlists.html")
+
+@app.route('/playlist', methods=['GET', 'POST'])
+def playlist():
+    return render_template("inspect_playlist.html")
