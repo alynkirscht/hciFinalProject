@@ -4,6 +4,8 @@ function addLanguage() {
     //Clone select and submit button
     const language1 = document.getElementById("lstLanguage"); 
     const language2 = language1.cloneNode(true);
+    language2.id = "lstLanguage2";
+    language2.name = "lstLanguage2";
     const btnSubmit = document.getElementById("btnSubmit");
     const btnClone = btnSubmit.cloneNode(true);
   

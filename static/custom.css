@@ -86,7 +86,7 @@ input, select, option{
     font-weight: 300;
 }
 
-input[type="submit"], input[type="button"]{
+input[type="submit"], input[type="button"].lang_button{
     background-color: #0073ff;
     color: black;
     font-size: 1em;
@@ -147,4 +147,15 @@ img.spinner{
     outline: 5px solid white;
     display: inline-block
     
+}
+
+.back_button{
+    float: left;
+    width: 10%;
+    height: 5%;
+    font-size:5em !important;
+    background-color: black;
+    outline: black;
+    border:none;
+
 }
