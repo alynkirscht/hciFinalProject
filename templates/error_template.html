@@ -6,105 +6,18 @@
             <title>Error Page</title>
             <meta name="author" content="Alyn Kirsch, Maya Griffith, Drew Jepsen">
             <meta name="description" content="Template Error Page">
-        <!-- <link rel="stylesheet" href="css/custom.css" type="text/css"> -->
-            <!-- Add icon library -->
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-            <style>
-            *,
-            *:before,
-            *:after{
-                padding: 0;
-                margin: 0;
-                box-sizing: border-box;
-            }
-            body{
-            background-color: #080710;
-            }
-        
-            input:focus, select:focus {
-                outline: 5px solid #dc143c;
-            size: 6em;
-            background-color: white;
-            color: black;
-            }
-            
-            form{
-            height: 34em;
-            width: 24em;
-            background-color: rgba(44,41,42);
-            position: absolute;
-            transform: translate(-50%,-50%);
-            top: 50%;
-            left: 50%;
-            border-radius: 1em;
-            border: .2em solid rgba(255,255,255,0.1);
-            padding: 2em 2.5em;
-            }
-        
-            form *{
-            font-family: 'Poppins',sans-serif;
-            color: #ffffff;
-            letter-spacing: 0.02em;
-            border: none;
-            margin-top: 1em;
-            margin-bottom: .05em;
-            }
-        
-            form h1{
-            font-size: 2.5em;
-            font-weight: 500;
-            line-height: 1em;
-            text-align: center;
-            }
-        
-            label{
-            display: inline;
-            margin-top: 2em;
-            font-size: 1em;
-            font-weight: 500;
-            float: auto;
-            }
-            input, select{
-            display: block;
-            height: 3.5em;
-            width: 100%;
-            background-color: rgb(38, 38, 42);
-            padding: 0 1em;
-            margin-top: .8em;
-            font-size: .9em;
-            font-weight: 300;
-            }
-        
-            input[type="submit"]{
-            margin-top: 2em;
-            width: 100%;
-            background-color: #0073ff;
-            color: black;
-            padding: 1em 0;
-            font-size: 1em;
-            font-weight: 600;
-            border-radius: .5em;
-            cursor: pointer;
-            }
-        
-            .filter-white{
-                filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(23deg) brightness(108%) contrast(101%);
-                width: 1.5em;
-                float: left;
-                margin-left: 0.5em;
-                margin-right: 0.7em;
-                margin-bottom: .5em;
-            }
-            </style>
+            <link rel="stylesheet" href="static/custom.css" type="text/css">
         </head>
       <nav>
         <a class="activePage" href="login_page.html">Return To Login</a>
       </nav>
       <main>
-        
         <article>
-            <p><h1>Something Went Wrong </h1></p>
-            <p>This is a 404 error, which means you clicked on a bad link or entered an invalid URL.</p>
+            <h1>Language song recommender</h1>
+        </article>
+        <article>
+            <img src="static/circle-exclamation-solid.svg" class="error" alt="language-icon"/>
+            <p class="error">{{message}}</p>
         </article>
       </main>
     </body>

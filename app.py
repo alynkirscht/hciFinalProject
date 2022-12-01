@@ -15,7 +15,7 @@ def login():
         if (username == 'a' and password == '1'):
             return redirect(url_for('language'))
         else:
-            return redirect(url_for('error'))
+            return render_template('error_template.html', message="Your username and password are wrong. Try again!")
 
     return render_template("login_page.html")
 

@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    color: white;
 }
 body{
     background-color: #080710;
@@ -96,6 +97,19 @@ input[type="submit"], input[type="button"]{
 
 .filter-white{
     filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(23deg) brightness(108%) contrast(101%);
+}
+
+img.error{
+    filter: invert(21%) sepia(46%) saturate(6797%) hue-rotate(338deg) brightness(86%) contrast(102%);
+    width: 30%;
+}
+
+p.error{
+    color:white;
+    text-align: center;
+    margin:  1em auto;
+    font-size: 2em;
+    font-weight: 300;
 }
 
 img {
