@@ -6,104 +6,9 @@
   <title>Login page</title>
   <meta name="author" content="Alyn Kirsch, Maya Griffith, Drew Jepsen">
   <meta name="description" content="Find songs you love in another language">
- <!-- <link rel="stylesheet" href="css/custom.css" type="text/css"> -->
-  <!-- Add icon library -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <style>
-    *,
-    *:before,
-    *:after{
-      padding: 0;
-      margin: 0;
-      box-sizing: border-box;
-    }
-    body{
-    background-color: #080710;
-    }
+  <link rel="stylesheet" href="static/custom.css" type="text/css">
 
-    input:focus, select:focus {
-      outline: 5px solid crimson;
-    size: 6em;
-    background-color: white;
-    color: black;
-    }
-    
-    form{
-    height: 34em;
-    width: 24em;
-    background-color: rgba(44,41,42);
-    position: absolute;
-    transform: translate(-50%,-50%);
-    top: 50%;
-    left: 50%;
-    border-radius: 1em;
-    border: .2em solid rgba(255,255,255,0.1);
-    padding: 2em 2.5em;
-    }
-
-    form *{
-    font-family: 'Poppins',sans-serif;
-    color: #ffffff;
-    letter-spacing: 0.02em;
-    border: none;
-    margin-top: 1em;
-    margin-bottom: .05em;
-    }
-
-    h1, h2{
-    font-family: 'Poppins',sans-serif;
-    font-weight: 500;
-    text-align: center;
-    font-size: 2.5em;
-    margin-top: .1em;
-    }
-
-    h1{
-      padding-top: .5em;
-      font-size: 4em;
-      font-weight: bold;
-      color: white;
-    }
-
-    label{
-    display: inline;
-    margin-top: 2em;
-    font-size: 1em;
-    font-weight: 500;
-    float: auto;
-    }
-    input, select{
-    display: block;
-    height: 3.5em;
-    width: 100%;
-    background-color: rgb(38, 38, 42);
-    padding: 0 1em;
-    margin-top: .8em;
-    font-size: .9em;
-    font-weight: 300;
-    }
-
-    input[type="submit"]{
-    margin-top: 2em;
-    width: 100%;
-    background-color: #0073ff;
-    color: black;
-    padding: .05em 0;
-    font-size: 1em;
-    font-weight: 600;
-    border-radius: .5em;
-    cursor: pointer;
-    }
-
-    .filter-white{
-      filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(23deg) brightness(108%) contrast(101%);
-      width: 1.5em;
-      float: left;
-      margin-left: 0.5em;
-      margin-right: 0.7em;
-      margin-bottom: .5em;
-    }
-  </style>
+ 
 </head>
 
 <body>
@@ -111,12 +16,12 @@
     <h1>Language song recommender</h1>
     <article>
       <form action="{{ url_for('.login') }}" id="frmLogin" method="post">
-        <h2>Login Here</h2>
+        <h2 class="login">Login Here</h2>
         <fieldset>
-          <img src="static/headphones-solid.svg" class="filter-white" alt="headphones-icon"/>
+          <img src="static/headphones-solid.svg" class="icon-label" alt="headphones-icon"/>
           <p>
             <legend></legend> 
-            <label for="lstMusicPlatform">Music platform</label> 
+            <label for="lstMusicPlatform" class="icon-label">Music platform</label> 
             <select id="lstMusicPlatform" name="lstMusicPlatform" title="Choose music platform" autocomplete="on">
               <option value="" disabled selected hidden></option>
               <option value="AmazonPrimeMusic">Amazon Prime Music</option>
@@ -127,14 +32,14 @@
               <option value="Youtube">Youtube</option>
             </select>
           </p>
-          <img src="static/user-solid.svg" class="filter-white" alt="user-icon"/>
+          <img src="static/user-solid.svg" class="icon-label" alt="user-icon"/>
           <p>
-            <label for="txtUsername">Username</label> 
+            <label for="txtUsername" class="icon-label">Username</label> 
             <input type="text" title="Type username here" autocomplete="username" name="txtUsername" id="txtUsername">
           </p>
-          <img src="static/unlock-solid.svg" class="filter-white" alt="unlock-icon"/>
+          <img src="static/unlock-solid.svg" class="icon-label" alt="unlock-icon"/>
           <p>
-            <label for="pwdPassword">Password</label> 
+            <label for="pwdPassword" class="icon-label">Password</label> 
             <input type="password" title="Type password here" autocomplete="current-password" name="pwdPassword" id="pwdPassword">
           </p>
           <input id = "btnSubmit" autocomplete="" name = "btnSubmit" type = "submit" value = "Submit">

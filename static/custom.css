@@ -40,14 +40,21 @@ h1, h2{
     line-height: 1em;
     text-align: center;
     font-size: 2em;
-    margin-top: .1em;
+    
 }
 
 h1{
     font-size: 4em;
     font-weight: bold;
     color: white;
+    margin: .2em;
 }
+
+h2.login{
+    margin-bottom: 1em;
+    margin: .2em;
+}
+
 
 label{
     display: block;
@@ -55,11 +62,25 @@ label{
     font-size: 1em;
     font-weight: 500;
 }
+
+label.icon-label {
+    display: inline;
+
+}
+
+img.icon-label {
+    width: 1.5em;
+    float: left;
+    margin-left: 0.5em;
+    margin-right: 0.7em;
+    filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(23deg) brightness(108%) contrast(101%);
+}
 input, select, option{
     height: 3.5em;
     width: 100%;
     background-color: rgb(59, 59, 65);
-    margin-top: .8em;
+    margin-top: .5em;
+    margin-bottom: 1em;
     font-size: .9em;
     font-weight: 300;
 }

@@ -15,8 +15,8 @@ def login():
         if (username == 'a' and password == '1'):
             return redirect(url_for('language'))
         else:
-            #return redirect(url_for('error')# Error page
-            pass
+            return redirect(url_for('error'))
+
     return render_template("login_page.html")
 
 @app.route('/language', methods=['GET','POST'])
@@ -25,6 +25,10 @@ def language():
     
 
 
-@app.route('/error', methods=['POST'])
+@app.route('/error', methods=['GET', 'POST'])
 def error():
     return render_template("error_template.html")
+
+@app.route('/languages', methods=['GET', 'POST'])
+def languages():
+    return render_template("suggested_playlists.html")

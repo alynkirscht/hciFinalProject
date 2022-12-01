@@ -6,7 +6,8 @@
   <title>Language page</title>
   <meta name="author" content="Alyn Kirsch, Maya Griffith, Drew Jepsen">
   <meta name="description" content="Find songs you love in another language">
-  <link rel="stylesheet" href="static/custom.css" type="text/css">   
+  <link rel="stylesheet" href="static/custom.css" type="text/css">
+  <script type="text/javascript" src="static/language.js"></script>
 </head>
 <body>
   <main>
@@ -15,7 +16,7 @@
     </article>
     <article>
       <form action="{{ url_for('.language') }}" id="frmLogin" method="post">
-        <h2>Choose a language</h2>
+        <h2 class="language"> Choose a language</h2>
         <img src="static/language-solid.svg" class="filter-white" alt="language-icon"/>
         <fieldset>
           <input id = "btnAddLanguage" autocomplete="" class="lang_button" name = "btnAddLanguage" type = "button" value = "+ language" onclick="addLanguage()">
@@ -100,8 +101,7 @@
           </p>
           <input id = "btnSubmit" autocomplete="current-password" name = "btnSubmit" type = "submit" value = "Submit" >
           <p id="demo"></p>
-        </fieldset>
-        
+        </fieldset> 
     </article>
   </main>
   <footer></footer>
