@@ -21,7 +21,16 @@ def login():
 
 @app.route('/language', methods=['GET','POST'])
 def language():
+    if request.method == 'POST':
+        language1 = request.form.get('lstLanguage')
+        language2 = request.form.get('')
+
+        if language1 == 'Spanish':
+            return redirect(url_for("loading"))
+
     return render_template("language_page.html")
+
+    
     
 
 
@@ -29,7 +38,11 @@ def language():
 def error():
     return render_template("error_template.html")
 
-@app.route('/languages', methods=['GET', 'POST'])
+@app.route('/loading', methods=['GET', 'POST'])
+def loading():
+    return render_template("loading_page.html")
+
+@app.route('/suggested_playlists', methods=['GET', 'POST'])
 def languages():
     return render_template("suggested_playlists.html")
 

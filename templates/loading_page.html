@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <body onLoad="loadingBar();">
+        <head>
+            <meta charset="utf-8">
+            <title>Loading page</title>
+            <meta name="author" content="Alyn Kirsch, Maya Griffith, Drew Jepsen">
+            <meta name="description" content="Loading page">
+            <link rel="stylesheet" href="static/custom.css" type="text/css">
+            <script type="text/javascript" src="static/language.js"></script>
+        </head>
+      <nav>
+        <a class="activePage" href="login_page.html">Return To Login</a>
+      </nav>
+      <main>
+        <article>
+            <h1>Language song recommender</h1>
+        </article>
+        <article>
+            <img src="static/spinner-solid.svg" class="spinner" alt="spinner-icon"/>
+            <p class="spinner">Analyzing your data...</p>
+
+            <div id="progressBar">
+              <div id="bar"></div>
+            </div>
+        </article>
+      </main>
+    </body>
+</html>

@@ -95,7 +95,7 @@ input[type="submit"], input[type="button"]{
     cursor: pointer;
 }
 
-.filter-white{
+.filter-white, img.spinner{
     filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(23deg) brightness(108%) contrast(101%);
 }
 
@@ -104,7 +104,8 @@ img.error{
     width: 30%;
 }
 
-p.error{
+p.error, p.spinner{
+    font-family: 'Poppins',sans-serif;
     color:white;
     text-align: center;
     margin:  1em auto;
@@ -122,4 +123,28 @@ img {
 #btnAddLanguage{
     background-color: lightblue;
     width: 40%;
+}
+
+img.spinner{   
+    animation: spin 5s linear infinite;
+    width: 30%;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+#progressBar {
+    width: 50%;
+    margin: auto;
+    background-color: grey;
+  }
+  
+  #bar {
+    height: 4em;
+    background-color: #0073ff;
+    outline: 5px solid white;
+    display: inline-block
+    
 }
