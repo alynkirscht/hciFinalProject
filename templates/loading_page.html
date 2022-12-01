@@ -9,11 +9,9 @@
             <link rel="stylesheet" href="static/custom.css" type="text/css">
             <script type="text/javascript" src="static/language.js"></script>
         </head>
-      <nav>
-        <a class="activePage" href="login_page.html">Return To Login</a>
-      </nav>
       <main>
         <article>
+            <input id = "btnBack" autocomplete="" class="back_button" name = "btnBack" type = "button" value = "&#8592" onclick="history.back()">
             <h1>Language song recommender</h1>
         </article>
         <article>
@@ -23,6 +21,7 @@
             <div id="progressBar">
               <div id="bar"></div>
             </div>
+            <div id="rec" value="{{recommendation}}"></div>
         </article>
       </main>
     </body>

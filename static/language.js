@@ -41,7 +41,17 @@ function loadingBar() {
         elem.style.width = width + "%";
       }
       if (width == 100){
-        window.location.replace("suggested_playlists");
+        var langRec = document.getElementById("rec");
+        if (langRec == "Spanish"){
+            window.location.replace("suggested_playlists_spanish");
+        }
+        else if (langRec == "Hindi"){
+            window.location.replace("suggested_playlists_hindi")    
+        }
+        else if (langRec == "Spanish+Hindi"){
+            window.location.replace("suggested_playlists_spanishHindi") 
+        }
+            
       }
     }
   }

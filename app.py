@@ -23,10 +23,19 @@ def login():
 def language():
     if request.method == 'POST':
         language1 = request.form.get('lstLanguage')
-        language2 = request.form.get('')
-
-        if language1 == 'Spanish':
-            return redirect(url_for("loading"))
+        language2 = request.form.get('lstLanguage2')
+        print(language2)
+        print(language1)
+        if language1 == "Spanish" and language2 == None:
+            return render_template("loading_page.html", recommendation='Spanish')
+        elif language1 == 'Hindi' and language2 == None:
+            return render_template("loading_page.html", recommendation='Hindi')
+        elif language1 == 'Spanish' and language2 == 'Hindi':
+            return render_template("loading_page.html", recommendation='Spanish+Hindi')
+        elif language2 == 'Spanish' and language1 == 'Hindi':
+            return render_template("loading_page.html", recommendation='Spanish+Hindi')
+        else:
+            return render_template('error_template.html', message="We couldn't find recommendations in the language you chose. Try with other languages!")
 
     return render_template("language_page.html")
 
