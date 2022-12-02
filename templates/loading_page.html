@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <body onLoad="loadingBar();">
+        <head>
+            <meta charset="utf-8">
+            <title>Loading page</title>
+            <meta name="author" content="Alyn Kirsch, Maya Griffith, Drew Jepsen">
+            <meta name="description" content="Loading page">
+            <link rel="stylesheet" href="static/custom.css" type="text/css">
+            <script type="text/javascript" src="static/language.js"></script>
+        </head>
+      <main>
+        <article>
+            <input id = "btnBack" autocomplete="" class="back_button" name = "btnBack" type = "button" value = "&#8592" onclick="history.back()">
+            <h1>Language song recommender</h1>
+        </article>
+        <article>
+            <img src="static/spinner-solid.svg" class="spinner" alt="spinner-icon"/>
+            <p class="spinner">Analyzing your data...</p>
+
+            <div id="progressBar">
+              <div id="bar"></div>
+            </div>
+            <div id="rec" value="{{recommendation}}"></div>
+        </article>
+      </main>
+    </body>
+</html>

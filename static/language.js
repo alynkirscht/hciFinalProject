@@ -4,6 +4,8 @@ function addLanguage() {
     //Clone select and submit button
     const language1 = document.getElementById("lstLanguage"); 
     const language2 = language1.cloneNode(true);
+    language2.id = "lstLanguage2";
+    language2.name = "lstLanguage2";
     const btnSubmit = document.getElementById("btnSubmit");
     const btnClone = btnSubmit.cloneNode(true);
   
@@ -21,4 +23,36 @@ function addLanguage() {
     //Disable button and change cursor to not allowed after one use
     document.getElementById("btnAddLanguage").disabled = true;
     document.getElementById("btnAddLanguage").style.cursor = "not-allowed";
+}
+
+var i = 0;
+function loadingBar() {
+  if (i == 0) {
+    i = 1;
+    var elem = document.getElementById("bar");
+    var width = 1;
+    var id = setInterval(frame, 10);
+    function frame() {
+      if (width >= 100) {
+        clearInterval(id);
+        i = 0;
+      } else {
+        width++;
+        elem.style.width = width + "%";
+      }
+      if (width == 100){
+        var langRec = document.getElementById("rec");
+        if (langRec == "Spanish"){
+            window.location.replace("suggested_playlists_spanish");
+        }
+        else if (langRec == "Hindi"){
+            window.location.replace("suggested_playlists_hindi")    
+        }
+        else if (langRec == "Spanish+Hindi"){
+            window.location.replace("suggested_playlists_spanishHindi") 
+        }
+            
+      }
+    }
+  }
 }
