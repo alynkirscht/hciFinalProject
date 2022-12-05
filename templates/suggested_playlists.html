@@ -1,120 +1,83 @@
 <!DOCTYPE html>
 <html>
+
+
     <head>
         <meta charset="utf-8">
         <title>Suggest Playlist</title>
         <meta name="author" content="Alyn Kirsch, Maya Griffith, Drew Jepsen">
         <meta name="description" content="Look at all Playlist">
+        <link rel="stylesheet" type="text/css" href="https://demo.plantpot.works/assets/css/normalize.css">
+        <link rel="stylesheet" href="https://use.typekit.net/opg3wle.css">
+        <link rel="stylesheet" href="static/results.css" type="text/css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <style>
-        a {
-            color: #1db954;
-        }
-        h1 {
-            color: #b3b3b3;
-        }
-        body {
-            background-color: #191414;
-        }
-        figure{
-            float: right;
-            text-align: center;
-        }
-        img{
-            max-width: 45mm;
-        }
-        .flex-container {
-        display: flex;
-        flex-wrap: nowrap;
-        background-color: #212121;
-        border-radius: 25px;
-        }
-
-        .flex-container > figure > figcaption {
-        background-color: #b3b3b3;
-        border-radius: 25px;
-        width: 40mm;
-        margin: 10px;
-        text-align: center;
-        }
-        </style>
+       
     </head>
     <body>
-    <h3>Your suggested Playlists</h3>
+    <h1>Your suggested Music</h1>
 
-    <h1>Playlist1</h1>
-    <a class="activePage" href="{{ url_for('.playlist') }}">Inspect Playlist</a>
+    <h2>Playlists</h2>
     <div class="flex-container">
+        <a class="activePage" href="{{ url_for('.playlist') }}">
         <figure>
-            <img alt='DarkSideofMoon' src='..\static\DSoM.jpg'>
-            <figcaption>Eclipse</figcaption>
+            <img alt='Beginner Spanish' src='..\static\begspan.png'>
+            
+            <figcaption>Beginner Spanish</figcaption></a>
+            <img class='heart' id='heart' alt='unclicked heart' src='..\static\heart-regular.svg' onclick="chngimg()">
         </figure>
+        
+        
+        <a class="activePage" href="{{ url_for('.playlist') }}">
         <figure>
-            <img alt='DancingQueen' src='..\static\Abba.jpg'>
-            <figcaption>Dancing Queen</figcaption>
+            <img alt='Intermediate Spanish' src='..\static\interspan.png'>
+            <figcaption>Intermediate Spanish</figcaption>
+            <img class='heart' id='heart' alt='unclicked heart' src='..\static\heart-regular.svg' onclick="chngimg()">
         </figure>
+    </a>
+    <a class="activePage" href="{{ url_for('.playlist') }}">
         <figure>
-            <img alt='meddle' src='..\static\M.jpeg'>
-            <figcaption>Echos</figcaption>
+            <img alt='Advanced Spanish' src='..\static\advanspan.png'>
+            <figcaption>Advanced Spanish</figcaption>
         </figure> 
+    </a>
+    <a class="activePage" href="{{ url_for('.playlist') }}">
         <figure>
-            <img alt='AnotherBrickInTheWall' src='..\static\tW.jpg'>
-            <figcaption>Another Brick in the Wall</figcaption>
+            <img alt='Dance in Spanish' src='..\static\bailar.png'>
+            <figcaption>Dance in Spanish</figcaption>
         </figure>
+        </a>
+        <a class="activePage" href="{{ url_for('.playlist') }}">
         <figure>
-            <img alt='RainingInJune' src='..\static\RiJ.jpg'>
-            <figcaption>Raining in June</figcaption>
+            <img alt='Classics' src='..\static\classics.png'>
+            <figcaption>Classics</figcaption>
         </figure>
+        </a>
     </div>
 
-    <h1>Playlist2</h1>
-    <a class="activePage" href="{{ url_for('.playlist') }}">Inspect Playlist</a>
+    <h2>Songs</h2>
     <div class="flex-container">
         <figure>
-            <img alt='DarkSideofMoon' src='..\static\DSoM.jpg'>
-            <figcaption>Eclipse</figcaption>
+            <img alt='Tití Me Preguntó by Bad Bunny' src='..\static\badbunny.jpg'>
+            <figcaption>Tití Me Preguntó</figcaption>
         </figure>
         <figure>
-            <img alt='DancingQueen' src='..\static\Abba.jpg'>
-            <figcaption>Dancing Queen</figcaption>
+            <img alt='Hawái by Maluma' src='..\static\maluma.jpg'>
+            <figcaption>Hawái</figcaption>
         </figure>
         <figure>
-            <img alt='meddle' src='..\static\M.jpeg'>
-            <figcaption>Echos</figcaption>
+            <img alt='Me Rehúso by Danny Ocean' src='..\static\danny.jpg'>
+            <figcaption>Me Rehúso</figcaption>
         </figure> 
         <figure>
-            <img alt='AnotherBrickInTheWall' src='..\static\tW.jpg'>
-            <figcaption>Another Brick in the Wall</figcaption>
+            <img alt='PA’ ROMPERLA by Bad Bunny and Don Omar' src='..\static\disk.jpg'>
+            <figcaption>PA’ ROMPERLA</figcaption>
         </figure>
         <figure>
-            <img alt='RainingInJune' src='..\static\RiJ.jpg'>
-            <figcaption>Raining in June</figcaption>
-        </figure>
-    </div>
-
-    <h1>playlist3</h1>
-    <a class="activePage" href="inspect_playlist.html">Inspect Playlist</a>
-    <div class="flex-container">
-        <figure>
-            <img alt='DarkSideofMoon' src='..\static\DSoM.jpg'>
-            <figcaption>Eclipse</figcaption>
-        </figure>
-        <figure>
-            <img alt='DancingQueen' src='..\static\Abba.jpg'>
-            <figcaption>Dancing Queen</figcaption>
-        </figure>
-        <figure>
-            <img alt='meddle' src='..\static\M.jpeg'>
-            <figcaption>Echos</figcaption>
-        </figure> 
-        <figure>
-            <img alt='AnotherBrickInTheWall' src='..\static\tW.jpg'>
-            <figcaption>Another Brick in the Wall</figcaption>
-        </figure>
-        <figure>
-            <img alt='RainingInJune' src='..\static\RiJ.jpg'>
-            <figcaption>Raining in June</figcaption>
+            <img alt='Se Preparó by Ozuna' src='..\static\ozuna.png'>
+            <figcaption>Se Preparó</figcaption>
         </figure>
     </div>
     </body>
+    <script src="..\static\script.js"></script>
 </html>
