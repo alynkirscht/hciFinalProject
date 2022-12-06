@@ -22,10 +22,13 @@
         h1 {
             color: #b3b3b3;
             text-align: center;
-            font-size: 15mm;
+            font-size: 15;
         }
         body {
             background-color: #191414;
+        }
+        figure{
+            float: center;
         }
         img{
             max-width: 30mm;
@@ -38,6 +41,7 @@
             padding: 10px;
             background-color: #212121;
             border-radius: 25px;
+            align-items: center;
         }
 
     .grid-container > figure{
@@ -62,7 +66,8 @@
         .grid-container > figure > figcaption {
             background-color: #b3b3b3;
             border-radius: 25px;
-            width: 45mm;
+            width: 40mm;
+            margin: 10px;
             text-align: center;
         }
         .white{
@@ -105,7 +110,11 @@
     border:none;
 
 }
-</style>
+
+
+
+
+        </style>
     </head>
     <body>
         <input id = "btnBack" autocomplete="" class="back_button" name = "btnBack" type = "button" value = "&#8592" onclick="history.back()">
@@ -228,12 +237,11 @@
         </div>
         </figure>
 
-        <figure id="hide">
+        <figure>
             <div class="side-by-side">
             <img alt='Danza Kuduro' src='..\static\danza.jpg'>
             <img class='play' alt='play this song' src='..\static\play-solid.svg' onclick="changeplay(this)">
             <img class='heart' alt='like this song' src='..\static\heart-regular.svg' onclick="chngimg(this)">
-            <button onclick="hideElement()">Remove This Song</button>
             <div class="white">
             <figcaption>Danza Kuduro</figcaption>
             <p>Don Omar</p>
