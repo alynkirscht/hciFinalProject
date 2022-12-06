@@ -5,7 +5,7 @@
     color: white;
 }
 body{
-    background-color: #080710;
+    background-color: #191414;
 }
       
 article{
@@ -47,7 +47,7 @@ h1, h2{
 h1{
     font-size: 4em;
     font-weight: bold;
-    color: white;
+    color: #b3b3b3;
     margin: .2em;
 }
 
@@ -87,7 +87,7 @@ input, select, option{
 }
 
 input[type="submit"], input[type="button"].lang_button{
-    background-color: #0073ff;
+    background-color: #1db954;
     color: black;
     font-size: 1em;
     font-weight: 600;
@@ -106,7 +106,7 @@ img.error{
 
 p.error, p.spinner{
     font-family: 'Poppins',sans-serif;
-    color:white;
+    color:#b3b3b3;
     text-align: center;
     margin:  1em auto;
     font-size: 2em;
@@ -121,7 +121,7 @@ img {
 }
 
 #btnAddLanguage{
-    background-color: lightblue;
+    background-color: #4ac776;
     width: 40%;
 }
 
@@ -143,8 +143,8 @@ img.spinner{
   
   #bar {
     height: 4em;
-    background-color: #0073ff;
-    outline: 5px solid white;
+    background-color: #1db954;
+    outline: 5px solid #b3b3b3;
     display: inline-block
     
 }
@@ -154,8 +154,8 @@ img.spinner{
     width: 10%;
     height: 5%;
     font-size:5em !important;
-    background-color: black;
-    outline: black;
+    background-color: #191414;
+    outline: #b3b3b3;
     border:none;
 
 }
