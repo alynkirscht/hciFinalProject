@@ -105,11 +105,7 @@
     border:none;
 
 }
-
-
-
-
-        </style>
+</style>
     </head>
     <body>
         <input id = "btnBack" autocomplete="" class="back_button" name = "btnBack" type = "button" value = "&#8592" onclick="history.back()">
@@ -232,11 +228,12 @@
         </div>
         </figure>
 
-        <figure>
+        <figure id="hide">
             <div class="side-by-side">
             <img alt='Danza Kuduro' src='..\static\danza.jpg'>
             <img class='play' alt='play this song' src='..\static\play-solid.svg' onclick="changeplay(this)">
             <img class='heart' alt='like this song' src='..\static\heart-regular.svg' onclick="chngimg(this)">
+            <button onclick="hideElement()">Remove This Song</button>
             <div class="white">
             <figcaption>Danza Kuduro</figcaption>
             <p>Don Omar</p>
