@@ -7,6 +7,10 @@
         <meta name="description" content="Look at a specific Playlist">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <style>
+            body{
+                font-family: 'Poppins',sans-serif;
+
+            }
         nav {
             text-align: center;
         }
@@ -27,16 +31,37 @@
             float: center;
         }
         img{
-            max-width: 45mm;
+            max-width: 30mm;
+            padding-left: 15em;
         }
         .grid-container {
-            display: grid;
-            grid-template-columns: auto auto auto;
+            display: flex;
+            flex-direction: column;
+            /* grid-template-columns: auto auto auto; */
             padding: 10px;
             background-color: #212121;
             border-radius: 25px;
             align-items: center;
         }
+
+    .grid-container > figure{
+
+        margin-left: -70em;
+
+    }
+
+    .heart, .play, .share{
+    filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(23deg) brightness(108%) contrast(101%);
+    width: 10mm;
+    padding-left: 2em;
+
+  }
+
+            .side-by-side{
+            display: flex;
+            flex-direction: row;
+        }
+
 
         .grid-container > figure > figcaption {
             background-color: #b3b3b3;
@@ -45,77 +70,172 @@
             margin: 10px;
             text-align: center;
         }
+        .white{
+            color:white;
+            text-align: left;
+            padding-left: 3em;
+            padding-top: 2em;
+        }
+
+        .topcontainer{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .icon-and-link{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        }
+
+        h1{
+            text-align: center;
+            font-size:50px
+        }
+        .icon-and-link > p{
+            color: white;
+            padding-left: 2em;
+        }
+
+
         </style>
     </head>
     <body>
 
-    <h1>Playlist Name</h1>
-    <nav>
-    <a class="activePage" href="error_template.html">Edit</a>
-    <a class="activePage" href="error_template.html">Share</a>
-    <a class="activePage" href="error_template.html">Save</a>
-    </nav>
+    <h1>Advanced Spanish</h1>
+   <div class="topcontainer">
+    <div class="icon-and-link">
+        <img class='share' alt='edit' src='..\static\pen-to-square-solid.svg'>
+        <p>Edit</p>
+    </div>
+    <div class="icon-and-link">
+        <img class='share' alt='edit' src='..\static\share-solid.svg'>
+        <p>Share</p>
+    </div>
+    <div class="icon-and-link">
+        <img class='heart' class="share" alt='like this song' src='..\static\heart-regular.svg' onclick="chngimg(this)">
+    <p>Save</p>
+    </div>
+    </div>
     <div class="grid-container">
         <figure>
-            <img alt='DarkSideofMoon' src='..\static\DSoM.jpg'>
-            <figcaption>Eclipse</figcaption>
+            <div class="side-by-side">
+            <img alt='Dura by Daddy Yankee' src='..\static\dura.jpg'>
+            <img class='play' alt='play this song' src='..\static\play-solid.svg' onclick="changeplay(this)">
+            <img class='heart' alt='like this song' src='..\static\heart-regular.svg' onclick="chngimg(this)">
+            <div class="white">
+            <figcaption>Dura</figcaption>
+            <p>Daddy Yankee</p>
+            </div>
+        </div>
         </figure>
         <figure>
-            <img alt='DancingQueen' src='..\static\Abba.jpg'>
-            <figcaption>Dancing Queen</figcaption>
+            <div class="side-by-side">
+            <img alt='TUDO BOM' src='..\static\tudo.jpg'>
+            <img class='play' alt='play this song' src='..\static\play-solid.svg' onclick="changeplay(this)">
+            <img class='heart' alt='like this song' src='..\static\heart-regular.svg' onclick="chngimg(this)">
+            <div class="white">
+            <figcaption>TUDO BOM</figcaption>
+            <p>J Balvin</p>
+            </div>
+        </div>
         </figure>
         <figure>
-            <img alt='meddle' src='..\static\M.jpeg'>
-            <figcaption>Echos</figcaption>
-        </figure> 
-        <figure>
-            <img alt='AnotherBrickInTheWall' src='..\static\tW.jpg'>
-            <figcaption>Another Brick in the Wall</figcaption>
+            <div class="side-by-side">
+            <img alt='Nervita by Bad Bunny' src='..\static\badbunny.jpg'>
+            <img class='play' alt='play this song' src='..\static\play-solid.svg' onclick="changeplay(this)">
+            <img class='heart' alt='like this song' src='..\static\heart-regular.svg' onclick="chngimg(this)">
+            <div class="white">
+            <figcaption>Neverita</figcaption>
+            <p>Bad Bunny</p>
+            </div>
+        </div>
         </figure>
         <figure>
-            <img alt='RainingInJune' src='..\static\RiJ.jpg'>
-            <figcaption>Raining in June</figcaption>
+            <div class="side-by-side">
+            <img alt='El Prestamo' src='..\static\prest.jpg'>
+            <img class='play' alt='play this song' src='..\static\play-solid.svg' onclick="changeplay(this)">
+            <img class='heart' alt='like this song' src='..\static\heart-regular.svg' onclick="chngimg(this)">
+            <div class="white">
+            <figcaption>El Prestamo</figcaption>
+            <p>Maluma</p>
+            </div>
+        </div>
+        </figure>
+
+        <figure>
+            <div class="side-by-side">
+            <img alt='Danza Kuduro' src='..\static\danza.jpg'>
+            <img class='play' alt='play this song' src='..\static\play-solid.svg' onclick="changeplay(this)">
+            <img class='heart' alt='like this song' src='..\static\heart-regular.svg' onclick="chngimg(this)">
+            <div class="white">
+            <figcaption>Danza Kuduro</figcaption>
+            <p>Don Omar</p>
+            </div>
+        </div>
+        </figure>
+
+        <figure>
+            <div class="side-by-side">
+            <img alt='Dura by Daddy Yankee' src='..\static\dura.jpg'>
+            <img class='play' alt='play this song' src='..\static\play-solid.svg' onclick="changeplay(this)">
+            <img class='heart' alt='like this song' src='..\static\heart-regular.svg' onclick="chngimg(this)">
+            <div class="white">
+            <figcaption>Dura</figcaption>
+            <p>Daddy Yankee</p>
+            </div>
+        </div>
         </figure>
         <figure>
-            <img alt='DarkSideofMoon' src='..\static\DSoM.jpg'>
-            <figcaption>Eclipse</figcaption>
+            <div class="side-by-side">
+            <img alt='TUDO BOM' src='..\static\tudo.jpg'>
+            <img class='play' alt='play this song' src='..\static\play-solid.svg' onclick="changeplay(this)">
+            <img class='heart' alt='like this song' src='..\static\heart-regular.svg' onclick="chngimg(this)">
+            <div class="white">
+            <figcaption>TUDO BOM</figcaption>
+            <p>J Balvin</p>
+            </div>
+        </div>
         </figure>
         <figure>
-            <img alt='DancingQueen' src='..\static\Abba.jpg'>
-            <figcaption>Dancing Queen</figcaption>
+            <div class="side-by-side">
+            <img alt='Nervita by Bad Bunny' src='..\static\badbunny.jpg'>
+            <img class='play' alt='play this song' src='..\static\play-solid.svg' onclick="changeplay(this)">
+            <img class='heart' alt='like this song' src='..\static\heart-regular.svg' onclick="chngimg(this)">
+            <div class="white">
+            <figcaption>Neverita</figcaption>
+            <p>Bad Bunny</p>
+            </div>
+        </div>
         </figure>
         <figure>
-            <img alt='meddle' src='..\static\M.jpeg'>
-            <figcaption>Echos</figcaption>
-        </figure> 
-        <figure>
-            <img alt='AnotherBrickInTheWall' src='..\static\tW.jpg'>
-            <figcaption>Another Brick in the Wall</figcaption>
+            <div class="side-by-side">
+            <img alt='El Prestamo' src='..\static\prest.jpg'>
+            <img class='play' alt='play this song' src='..\static\play-solid.svg' onclick="changeplay(this)">
+            <img class='heart' alt='like this song' src='..\static\heart-regular.svg' onclick="chngimg(this)">
+            <div class="white">
+            <figcaption>El Prestamo</figcaption>
+            <p>Maluma</p>
+            </div>
+        </div>
         </figure>
+
         <figure>
-            <img alt='RainingInJune' src='..\static\RiJ.jpg'>
-            <figcaption>Raining in June</figcaption>
+            <div class="side-by-side">
+            <img alt='Danza Kuduro' src='..\static\danza.jpg'>
+            <img class='play' alt='play this song' src='..\static\play-solid.svg' onclick="changeplay(this)">
+            <img class='heart' alt='like this song' src='..\static\heart-regular.svg' onclick="chngimg(this)">
+            <div class="white">
+            <figcaption>Danza Kuduro</figcaption>
+            <p>Don Omar</p>
+            </div>
+        </div>
         </figure>
-        <figure>
-            <img alt='DarkSideofMoon' src='..\static\DSoM.jpg'>
-            <figcaption>Eclipse</figcaption>
-        </figure>
-        <figure>
-            <img alt='DancingQueen' src='..\static\Abba.jpg'>
-            <figcaption>Dancing Queen</figcaption>
-        </figure>
-        <figure>
-            <img alt='meddle' src='..\static\M.jpeg'>
-            <figcaption>Echos</figcaption>
-        </figure> 
-        <figure>
-            <img alt='AnotherBrickInTheWall' src='..\static\tW.jpg'>
-            <figcaption>Another Brick in the Wall</figcaption>
-        </figure>
-        <figure>
-            <img alt='RainingInJune' src='..\static\RiJ.jpg'>
-            <figcaption>Raining in June</figcaption>
-        </figure>
+       
     </div>
     </body>
+    <script src="..\static\script.js"></script>
 </html>

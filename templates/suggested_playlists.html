@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 
     <head>
@@ -12,19 +12,43 @@
         <link rel="stylesheet" href="static/results.css" type="text/css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-       
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     </head>
     <body>
-    <h1>Your suggested Music</h1>
 
+        <ul class="menu">
+            <li><a class="menuItem" href="suggested_playlists">Recomended</a></li>
+            <li><a class="menuItem" href="{{ url_for('.language') }}">Change Language</a></li>
+            <li><a class="menuItem" href="{{ url_for('.login') }}">Log Out</a></li>
+          </ul>
+          <button class="hamburger">
+            <!-- material icons https://material.io/resources/icons/ -->
+            <i class="menuIcon material-icons">menu</i>
+            <i class="closeIcon material-icons">close</i>
+          </button>
+
+
+
+
+
+
+
+    <h1>Your suggested Music</h1>
+    <div class="playlist">
     <h2>Playlists</h2>
+    <div class="corner">
+    <a href="createplaylist.html"><p>Create your own playlist</p></a>
+    <a class="icon" href="createplaylist.html"><img alt='Create your own playlist' src='..\static\plus-solid.svg'></a>
+    </div>
+    </div>
     <div class="flex-container">
         <a class="activePage" href="{{ url_for('.playlist') }}">
         <figure>
             <img alt='Beginner Spanish' src='..\static\begspan.png'>
             
             <figcaption>Beginner Spanish</figcaption></a>
-            <img class='heart' id='heart' alt='like this song' src='..\static\heart-regular.svg' onclick="chngimg(this)">
+            <img class='heart' alt='like this song' src='..\static\heart-regular.svg' onclick="chngimg(this)">
         </figure>
         
         
@@ -32,14 +56,14 @@
         <figure>
             <img alt='Intermediate Spanish' src='..\static\interspan.png'>
             <figcaption>Intermediate Spanish</figcaption></a>
-            <img class='heart' id='heart' alt='like this song' src='..\static\heart-regular.svg' onclick="chngimg(this)">
+            <img class='heart' alt='like this song' src='..\static\heart-regular.svg' onclick="chngimg(this)">
         </figure>
     
     <a class="activePage" href="{{ url_for('.playlist') }}">
         <figure>
             <img alt='Advanced Spanish' src='..\static\advanspan.png'>
             <figcaption>Advanced Spanish</figcaption></a>
-            <img class='heart' id='heart' alt='like this song' src='..\static\heart-regular.svg' onclick="chngimg(this)">
+            <img class='heart' alt='like this song' src='..\static\heart-regular.svg' onclick="chngimg(this)">
 
         </figure> 
     
@@ -47,14 +71,14 @@
         <figure>
             <img alt='Dance in Spanish' src='..\static\bailar.png'>
             <figcaption>Dance in Spanish</figcaption></a>
-            <img class='heart' id='heart' alt='like this song' src='..\static\heart-regular.svg' onclick="chngimg(this)">
+            <img class='heart' alt='like this song' src='..\static\heart-regular.svg' onclick="chngimg(this)">
         </figure>
         
         <a class="activePage" href="{{ url_for('.playlist') }}">
         <figure>
             <img alt='Classics' src='..\static\classics.png'>
             <figcaption>Classics</figcaption></a>
-            <img class='heart' id='heart' alt='like this song' src='..\static\heart-regular.svg' onclick="chngimg(this)">
+            <img class='heart' alt='like this song' src='..\static\heart-regular.svg' onclick="chngimg(this)">
         </figure>
        
     </div>
@@ -65,31 +89,31 @@
         <figure>
             <img alt='Efecto by Bad Bunny' src='..\static\badbunny.jpg'>
             <figcaption>Efecto</figcaption></a>
-            <img class='heart' id='heart' alt='like this song' src='..\static\heart-regular.svg' onclick="chngimg(this)">
+            <img class='heart' alt='like this song' src='..\static\heart-regular.svg' onclick="chngimg(this)">
         </figure>
         <a class="activePage" href="https://www.youtube.com/watch?v=vUONWl8uBxM&ab_channel=LatinNow">
         <figure>
             <img alt='Hawái by Maluma' src='..\static\maluma.jpg'>
             <figcaption>Hawái</figcaption></a>
-            <img class='heart' id='heart' alt='like this song' src='..\static\heart-regular.svg' onclick="chngimg(this)">
+            <img class='heart' alt='like this song' src='..\static\heart-regular.svg' onclick="chngimg(this)">
         </figure>
         <a class="activePage" href="https://www.youtube.com/watch?v=aDCcLQto5BM&ab_channel=DannyOcean">
         <figure>
             <img alt='Me Rehúso by Danny Ocean' src='..\static\danny.jpg'>
             <figcaption>Me Rehúso</figcaption></a>
-            <img class='heart' id='heart' alt='like this song' src='..\static\heart-regular.svg' onclick="chngimg(this)">
+            <img class='heart' alt='like this song' src='..\static\heart-regular.svg' onclick="chngimg(this)">
         </figure> 
         <a class="activePage" href="https://www.youtube.com/watch?v=tK4ioPhpal4&ab_channel=BadBunny">
         <figure>
             <img alt='PA’ ROMPERLA by Bad Bunny and Don Omar' src='..\static\disk.jpg'>
             <figcaption>PA’ ROMPERLA</figcaption></a>
-            <img class='heart' id='heart' alt='like this song' src='..\static\heart-regular.svg' onclick="chngimg(this)">
+            <img class='heart' alt='like this song' src='..\static\heart-regular.svg' onclick="chngimg(this)">
         </figure>
         <a class="activePage" href="https://www.youtube.com/watch?v=u8jb8z3zUJM&ab_channel=Ozuna">
         <figure>
             <img alt='Hey Mor by Ozuna' src='..\static\ozuna.jpg'>
             <figcaption>Hey Mor</figcaption></a>
-            <img class='heart' id='heart' alt='like this song' src='..\static\heart-regular.svg' onclick="chngimg(this)">
+            <img class='heart' alt='like this song' src='..\static\heart-regular.svg' onclick="chngimg(this)">
         </figure>
     </div>
     </body>
