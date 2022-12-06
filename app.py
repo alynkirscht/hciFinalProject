@@ -55,6 +55,10 @@ def loading():
 def languages():
     return render_template("suggested_playlists.html")
 
+@app.route('/suggested_playlistsSpanish', methods=['GET', 'POST'])
+def languagesSpanish():
+    return render_template("suggested_playlistsSpanish.html")
+
 @app.route('/playlist', methods=['GET', 'POST'])
 def playlist():
     return render_template("inspect_playlist.html")
