@@ -26,4 +26,7 @@ Tools:
 * To find icons: https://fontawesome.com/search?o=r&m=free
   * svg file (for accesibility)
   
+Sources:
+Used to for menu: https://dev.to/ljcdev/easy-hamburger-menu-with-js-2do0
+
   
