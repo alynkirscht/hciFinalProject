@@ -2,50 +2,27 @@
 <html lang="en">
     <body>
         <head>
-            <meta charset="utf-8">
-            <title>Help Page</title>
-            <meta name="author" content="Alyn Kirsch, Maya Griffith, Drew Jepsen">
-            <meta name="description" content="Contains Helpful information and Guides">
-        <!-- <link rel="stylesheet" href="css/custom.css" type="text/css"> -->
-            <!-- Add icon library -->
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-            <style>
-            nav {
-                text-align: right;
-                width: auto;
-                background-color: #191414;
-                padding: 25px;
-                border-radius: 25px;
-            }
-            a {
-                font-size: 5mm;
-                color: #1db954;
-                padding: 2mm
-            }
-            h1{
-                text-align: left;
-                color: #191414;
-            }
-            p {
-                color: #191414;
-                text-align: left;
-                
-            }
-            body {
-                background-color:#b3b3b3;
-                 
-            }
-            </style>
+        <meta charset="utf-8">
+        <title>Help Page</title>
+        <meta name="author" content="Alyn Kirsch, Maya Griffith, Drew Jepsen">
+        <meta name="description" content="Contains Helpful information and Guides">
+        <link rel="stylesheet" type="text/css" href="https://demo.plantpot.works/assets/css/normalize.css">
+        <link rel="stylesheet" href="https://use.typekit.net/opg3wle.css">
+        <link rel="stylesheet" href="static/results.css" type="text/css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         </head>
-      <nav>
-        <a href="login_page.html">Return To Login</a>
-        <a href="language_page.html">Return To Language Selection</a>
-        <a href="suggested_playlists.html">Return To Suggested Playlists</a>
-      </nav>
+        <div class="topnav">
+            <a href="{{ url_for('.login') }}">Log Out</a>
+            <a class="active" href="{{ url_for('.help') }}">Help</a>
+            <a href="{{ url_for('.language') }}">Change Language</a>
+            <a href="suggested_playlistsSpanish">Recomended</a>
+        </div>
       <main>
         <article>
             <h1><b>About the Site </b></h1>
-            <p>This site is aimed to help craete a usable playlist for those looking to learn new languages. </p>
+            <p>This site is aimed to help create a usable playlist for those looking to learn new languages. </p>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
                 labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
                 laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
