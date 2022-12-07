@@ -39,10 +39,6 @@ def language():
 
     return render_template("language_page.html")
 
-    
-    
-
-
 @app.route('/error', methods=['GET', 'POST'])
 def error():
     return render_template("error_template.html")
@@ -51,13 +47,19 @@ def error():
 def loading():
     return render_template("loading_page.html")
 
-@app.route('/suggested_playlists', methods=['GET', 'POST'])
-def languages():
-    return render_template("suggested_playlists.html")
 
 @app.route('/suggested_playlistsSpanish', methods=['GET', 'POST'])
 def languagesSpanish():
     return render_template("suggested_playlistsSpanish.html")
+
+@app.route('/suggested_playlistsHindi', methods=['GET', 'POST'])
+def languagesHindi():
+    return render_template("suggested_playlistsHindi.html")
+
+@app.route('/suggested_playlistsSpanishHindi', methods=['GET', 'POST'])
+def languagesSpanishHindi():
+    return render_template("/suggested_playlistsSpanishHindi.html")
+
 
 @app.route('/playlist', methods=['GET', 'POST'])
 def playlist():

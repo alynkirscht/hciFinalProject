@@ -6,7 +6,15 @@
             <title>Loading page</title>
             <meta name="author" content="Alyn Kirsch, Maya Griffith, Drew Jepsen">
             <meta name="description" content="Loading page">
-            <meta http-equiv = "refresh" content = "4; url = suggested_playlistsSpanish" />
+            {% if recommendation == 'Spanish' %}
+              <meta http-equiv = "refresh" content = "4; url = /suggested_playlistsSpanish" />
+            {% elif recommendation == 'Hindi'%}
+              <meta http-equiv = "refresh" content = "4; url = /suggested_playlistsHindi.html" />
+            {% elif recommendation == 'Spanish+Hindi'%}
+              <meta http-equiv = "refresh" content = "4; url = /suggested_playlistsSpanishHindi.html" />
+            {% else %}
+              <meta http-equiv = "refresh" content = "4; url = /error" />
+            {% endif %}
             <link rel="stylesheet" href="static/custom.css" type="text/css">
             <script type="text/javascript" src="static/language.js"></script>
         </head>
