@@ -26,13 +26,17 @@
         }
         body {
             background-color: #191414;
+            padding-left: 25em;
+            padding-right: 20em;
+            align-content: center;
         }
         figure{
             float: center;
         }
         img{
             max-width: 30mm;
-            padding-left: 15em;
+            max-height: 30mm;
+            padding-left: 20em;
         }
         .grid-container {
             display: flex;
@@ -40,7 +44,7 @@
             /* grid-template-columns: auto auto auto; */
             padding: 10px;
             background-color: #212121;
-            border-radius: 25px;
+            border-radius: 15px;
             align-items: center;
         }
 
@@ -49,6 +53,13 @@
         margin-left: -70em;
 
     }
+    figure{
+        padding-right: 20em;
+        padding-left: 65em;
+        
+  
+     
+    }
 
     .heart, .play, .share{
     filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(23deg) brightness(108%) contrast(101%);
@@ -56,6 +67,24 @@
     padding-left: 2em;
 
   }
+  .x{
+    filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(23deg) brightness(108%) contrast(101%);
+    width: 7mm;
+    padding-left: 2em;
+
+  }
+
+  .grid-container figure:nth-child(even) {
+    background-color: #191414;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    /* padding-right: 55em;
+    padding-left: 47em; */
+
+
+
+}
+
 
             .side-by-side{
             display: flex;
@@ -66,15 +95,20 @@
         .grid-container > figure > figcaption {
             background-color: #b3b3b3;
             border-radius: 25px;
-            width: 40mm;
+            width: 50mm;
             margin: 10px;
             text-align: center;
         }
         .white{
             color:white;
             text-align: left;
-            padding-left: 3em;
+            padding-left: 2em;
+            padding-right: 4em;
             padding-top: 2em;
+            width: 70px;
+            overflow: hidden;
+            white-space: nowrap;
+            /* max-width: 10em; */
         }
 
         .topcontainer{
@@ -140,6 +174,7 @@
             <img alt='Dura by Daddy Yankee' src='..\static\dura.jpg'>
             <img class='play' alt='play this song' src='..\static\play-solid.svg' onclick="changeplay(this)">
             <img class='heart' alt='like this song' src='..\static\heart-regular.svg' onclick="chngimg(this)">
+            <img class='x' alt='get rid of this song' src='..\static\x-solid.svg' onclick="hideElement(this)">
             <div class="white">
             <figcaption>Dura</figcaption>
             <p>Daddy Yankee</p>
@@ -151,6 +186,7 @@
             <img alt='TUDO BOM' src='..\static\tudo.jpg'>
             <img class='play' alt='play this song' src='..\static\play-solid.svg' onclick="changeplay(this)">
             <img class='heart' alt='like this song' src='..\static\heart-regular.svg' onclick="chngimg(this)">
+            <img class='x' alt='get rid of this song' src='..\static\x-solid.svg' onclick="hideElement(this)">
             <div class="white">
             <figcaption>TUDO BOM</figcaption>
             <p>J Balvin</p>
@@ -162,6 +198,7 @@
             <img alt='Nervita by Bad Bunny' src='..\static\badbunny.jpg'>
             <img class='play' alt='play this song' src='..\static\play-solid.svg' onclick="changeplay(this)">
             <img class='heart' alt='like this song' src='..\static\heart-regular.svg' onclick="chngimg(this)">
+            <img class='x' alt='get rid of this song' src='..\static\x-solid.svg' onclick="hideElement(this)">
             <div class="white">
             <figcaption>Neverita</figcaption>
             <p>Bad Bunny</p>
@@ -173,6 +210,7 @@
             <img alt='El Prestamo' src='..\static\prest.jpg'>
             <img class='play' alt='play this song' src='..\static\play-solid.svg' onclick="changeplay(this)">
             <img class='heart' alt='like this song' src='..\static\heart-regular.svg' onclick="chngimg(this)">
+            <img class='x' alt='get rid of this song' src='..\static\x-solid.svg' onclick="hideElement(this)">
             <div class="white">
             <figcaption>El Prestamo</figcaption>
             <p>Maluma</p>
@@ -185,6 +223,7 @@
             <img alt='Danza Kuduro' src='..\static\danza.jpg'>
             <img class='play' alt='play this song' src='..\static\play-solid.svg' onclick="changeplay(this)">
             <img class='heart' alt='like this song' src='..\static\heart-regular.svg' onclick="chngimg(this)">
+            <img class='x' alt='get rid of this song' src='..\static\x-solid.svg' onclick="hideElement(this)">
             <div class="white">
             <figcaption>Danza Kuduro</figcaption>
             <p>Don Omar</p>
@@ -197,6 +236,7 @@
             <img alt='Dura by Daddy Yankee' src='..\static\dura.jpg'>
             <img class='play' alt='play this song' src='..\static\play-solid.svg' onclick="changeplay(this)">
             <img class='heart' alt='like this song' src='..\static\heart-regular.svg' onclick="chngimg(this)">
+            <img class='x' alt='get rid of this song' src='..\static\x-solid.svg' onclick="hideElement(this)">
             <div class="white">
             <figcaption>Dura</figcaption>
             <p>Daddy Yankee</p>
@@ -208,6 +248,7 @@
             <img alt='TUDO BOM' src='..\static\tudo.jpg'>
             <img class='play' alt='play this song' src='..\static\play-solid.svg' onclick="changeplay(this)">
             <img class='heart' alt='like this song' src='..\static\heart-regular.svg' onclick="chngimg(this)">
+            <img class='x' alt='get rid of this song' src='..\static\x-solid.svg' onclick="hideElement(this)">
             <div class="white">
             <figcaption>TUDO BOM</figcaption>
             <p>J Balvin</p>
@@ -219,6 +260,7 @@
             <img alt='Nervita by Bad Bunny' src='..\static\badbunny.jpg'>
             <img class='play' alt='play this song' src='..\static\play-solid.svg' onclick="changeplay(this)">
             <img class='heart' alt='like this song' src='..\static\heart-regular.svg' onclick="chngimg(this)">
+            <img class='x' alt='get rid of this song' src='..\static\x-solid.svg' onclick="hideElement(this)">
             <div class="white">
             <figcaption>Neverita</figcaption>
             <p>Bad Bunny</p>
@@ -230,6 +272,7 @@
             <img alt='El Prestamo' src='..\static\prest.jpg'>
             <img class='play' alt='play this song' src='..\static\play-solid.svg' onclick="changeplay(this)">
             <img class='heart' alt='like this song' src='..\static\heart-regular.svg' onclick="chngimg(this)">
+            <img class='x' alt='get rid of this song' src='..\static\x-solid.svg' onclick="hideElement(this)">
             <div class="white">
             <figcaption>El Prestamo</figcaption>
             <p>Maluma</p>
@@ -242,6 +285,7 @@
             <img alt='Danza Kuduro' src='..\static\danza.jpg'>
             <img class='play' alt='play this song' src='..\static\play-solid.svg' onclick="changeplay(this)">
             <img class='heart' alt='like this song' src='..\static\heart-regular.svg' onclick="chngimg(this)">
+            <img class='x' alt='get rid of this song' src='..\static\x-solid.svg' onclick="hideElement(this)">
             <div class="white">
             <figcaption>Danza Kuduro</figcaption>
             <p>Don Omar</p>
