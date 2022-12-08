@@ -7,7 +7,6 @@
         <title>Suggest Playlist</title>
         <meta name="author" content="Alyn Kirsch, Maya Griffith, Drew Jepsen">
         <meta name="description" content="Look at all Playlist">
-        <link rel="stylesheet" type="text/css" href="https://demo.plantpot.works/assets/css/normalize.css">
         <link rel="stylesheet" href="https://use.typekit.net/opg3wle.css">
         <link rel="stylesheet" href="static/results.css" type="text/css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
@@ -26,10 +25,9 @@
     <h1>Your Suggested Music</h1>
     <div class="playlist">
     <h2>Playlists</h2>
-    <div class="corner">
-    <a href="createplaylist.html"><p>Create your own playlist</p></a>
-    <a class="icon" href="createplaylist.html"><img alt='Create your own playlist' src='..\static\plus-solid.svg'></a>
-    </div>
+        <form method="POST" action="newPlaylist" class="corner">
+            <input id = "btnAddPlaylist" autocomplete="" class="playlist_button" name = "btnAddPlaylist" type = "submit" value = "Add Playlist +">
+        </form>
     </div>
     <div class="flex-container">
         <a class="activePage" href="{{ url_for('.playlist') }}">
@@ -59,7 +57,7 @@
     <a class="activePage" href="{{ url_for('.playlist') }}">
         <figure>
             <img alt='Dance in Spanish' src='..\static\2.png'>
-            <figcaption>Dance in Spanish</figcaption></a>
+            <figcaption>Dance in Hindi</figcaption></a>
             <img class='heart' alt='like this song' src='..\static\heart-regular.svg' onclick="chngimg(this)">
         </figure>
         

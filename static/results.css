@@ -174,13 +174,13 @@ a:focus, button:focus {
 }
 
 .back_button{
-  float: left;
   width: 10%;
   height: 5%;
   font-size:5em !important;
   background-color: #191414;
   outline: #b3b3b3;
   border:none;
+  color: #b3b3b3;
 
 }
 
