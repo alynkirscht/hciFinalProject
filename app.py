@@ -62,6 +62,11 @@ def languagesSpanishHindi():
 @app.route('/playlist', methods=['GET', 'POST'])
 def playlist():
     return render_template("inspect_playlist.html")
+
 @app.route('/help', methods=['GET', 'POST'])
 def help():
     return render_template("help_page.html")
+
+@app.route('/newPlaylist', methods=['GET', 'POST'])
+def newPlaylist():
+    return render_template("newPlaylist.html")

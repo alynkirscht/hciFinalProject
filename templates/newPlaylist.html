@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+    <head>
+        <meta charset="utf-8">
+        <title>Create Playlist</title>
+        <meta name="author" content="Alyn Kirsch, Maya Griffith, Drew Jepsen">
+        <meta name="description" content="Create New Playlist">
+        <link rel="stylesheet" type="text/css" href="https://demo.plantpot.works/assets/css/normalize.css">
+        <link rel="stylesheet" href="https://use.typekit.net/opg3wle.css">
+        <link rel="stylesheet" href="static/results.css" type="text/css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    </head>
+    <body>
+        
+    <input id = "btnBack" autocomplete="" class="back_button" name = "btnBack" type = "button" value = "&#8592" onclick="history.back()">
+    <form id="form"> 
+        <input type="search" id="query" name="q" placeholder="Search...">
+        <button>Search</button>
+      </form>
+    <div class="topcontainer">
+    <div class="icon-and-link">
+        <img class='share' alt='edit' src='..\static\pen-to-square-solid.svg'>
+        <p>Edit</p>
+    </div>
+    <div class="icon-and-link">
+        <img class='share' alt='edit' src='..\static\share-solid.svg'>
+        <p>Share</p>
+    </div>
+    <div class="icon-and-link">
+        <img class='heart' class="share" alt='like this song' src='..\static\heart-regular.svg' onclick="chngimg(this)">
+    <p>Save</p>
+    </div>
+    </div>
+    <div class="grid-container">
+        <figure>
+            <div class="side-by-side">
+            <img alt='Dura by Daddy Yankee' src='..\static\dura.jpg'>
+            <img class='play' alt='play this song' src='..\static\play-solid.svg' onclick="changeplay(this)">
+            <img class='heart' alt='like this song' src='..\static\heart-regular.svg' onclick="chngimg(this)">
+            <img class='x' alt='get rid of this song' src='..\static\x-solid.svg' onclick="hideElement(this)">
+            <div class="white">
+            <figcaption>Dura</figcaption>
+            <p>Daddy Yankee</p>
+            </div>
+        </div>
+        </figure>
+        <figure>
+            <div class="side-by-side">
+            <img alt='TUDO BOM' src='..\static\tudo.jpg'>
+            <img class='play' alt='play this song' src='..\static\play-solid.svg' onclick="changeplay(this)">
+            <img class='heart' alt='like this song' src='..\static\heart-regular.svg' onclick="chngimg(this)">
+            <img class='x' alt='get rid of this song' src='..\static\x-solid.svg' onclick="hideElement(this)">
+            <div class="white">
+            <figcaption>TUDO BOM</figcaption>
+            <p>J Balvin</p>
+            </div>
+        </div>
+        </figure>
+        <figure>
+            <div class="side-by-side">
+            <img alt='Nervita by Bad Bunny' src='..\static\badbunny.jpg'>
+            <img class='play' alt='play this song' src='..\static\play-solid.svg' onclick="changeplay(this)">
+            <img class='heart' alt='like this song' src='..\static\heart-regular.svg' onclick="chngimg(this)">
+            <img class='x' alt='get rid of this song' src='..\static\x-solid.svg' onclick="hideElement(this)">
+            <div class="white">
+            <figcaption>Neverita</figcaption>
+            <p>Bad Bunny</p>
+            </div>
+        </div>
+        </figure>
+        <figure>
+            <div class="side-by-side">
+            <img alt='El Prestamo' src='..\static\prest.jpg'>
+            <img class='play' alt='play this song' src='..\static\play-solid.svg' onclick="changeplay(this)">
+            <img class='heart' alt='like this song' src='..\static\heart-regular.svg' onclick="chngimg(this)">
+            <img class='x' alt='get rid of this song' src='..\static\x-solid.svg' onclick="hideElement(this)">
+            <div class="white">
+            <figcaption>El Prestamo</figcaption>
+            <p>Maluma</p>
+            </div>
+        </div>
+        </figure>
+
+        <figure>
+            <div class="side-by-side">
+            <img alt='Danza Kuduro' src='..\static\danza.jpg'>
+            <img class='play' alt='play this song' src='..\static\play-solid.svg' onclick="changeplay(this)">
+            <img class='heart' alt='like this song' src='..\static\heart-regular.svg' onclick="chngimg(this)">
+            <img class='x' alt='get rid of this song' src='..\static\x-solid.svg' onclick="hideElement(this)">
+            <div class="white">
+            <figcaption>Danza Kuduro</figcaption>
+            <p>Don Omar</p>
+            </div>
+        </div>
+        </figure>
+
+        <figure>
+            <div class="side-by-side">
+            <img alt='Dura by Daddy Yankee' src='..\static\dura.jpg'>
+            <img class='play' alt='play this song' src='..\static\play-solid.svg' onclick="changeplay(this)">
+            <img class='heart' alt='like this song' src='..\static\heart-regular.svg' onclick="chngimg(this)">
+            <img class='x' alt='get rid of this song' src='..\static\x-solid.svg' onclick="hideElement(this)">
+            <div class="white">
+            <figcaption>Dura</figcaption>
+            <p>Daddy Yankee</p>
+            </div>
+        </div>
+        </figure>
+        <figure>
+            <div class="side-by-side">
+            <img alt='TUDO BOM' src='..\static\tudo.jpg'>
+            <img class='play' alt='play this song' src='..\static\play-solid.svg' onclick="changeplay(this)">
+            <img class='heart' alt='like this song' src='..\static\heart-regular.svg' onclick="chngimg(this)">
+            <img class='x' alt='get rid of this song' src='..\static\x-solid.svg' onclick="hideElement(this)">
+            <div class="white">
+            <figcaption>TUDO BOM</figcaption>
+            <p>J Balvin</p>
+            </div>
+        </div>
+        </figure>
+        <figure>
+            <div class="side-by-side">
+            <img alt='Nervita by Bad Bunny' src='..\static\badbunny.jpg'>
+            <img class='play' alt='play this song' src='..\static\play-solid.svg' onclick="changeplay(this)">
+            <img class='heart' alt='like this song' src='..\static\heart-regular.svg' onclick="chngimg(this)">
+            <img class='x' alt='get rid of this song' src='..\static\x-solid.svg' onclick="hideElement(this)">
+            <div class="white">
+            <figcaption>Neverita</figcaption>
+            <p>Bad Bunny</p>
+            </div>
+        </div>
+        </figure>
+        <figure>
+            <div class="side-by-side">
+            <img alt='El Prestamo' src='..\static\prest.jpg'>
+            <img class='play' alt='play this song' src='..\static\play-solid.svg' onclick="changeplay(this)">
+            <img class='heart' alt='like this song' src='..\static\heart-regular.svg' onclick="chngimg(this)">
+            <img class='x' alt='get rid of this song' src='..\static\x-solid.svg' onclick="hideElement(this)">
+            <div class="white">
+            <figcaption>El Prestamo</figcaption>
+            <p>Maluma</p>
+            </div>
+        </div>
+        </figure>
+
+        <figure>
+            <div class="side-by-side">
+            <img alt='Danza Kuduro' src='..\static\danza.jpg'>
+            <img class='play' alt='play this song' src='..\static\play-solid.svg' onclick="changeplay(this)">
+            <img class='heart' alt='like this song' src='..\static\heart-regular.svg' onclick="chngimg(this)">
+            <img class='x' alt='get rid of this song' src='..\static\x-solid.svg' onclick="hideElement(this)">
+            <div class="white">
+            <figcaption>Danza Kuduro</figcaption>
+            <p>Don Omar</p>
+            </div>
+        </div>
+        </figure>
+        
+    </div>
+    </body>
+    <script src="..\static\script.js"></script>
+</html>
