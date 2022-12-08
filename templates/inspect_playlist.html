@@ -143,11 +143,40 @@
     color: #b3b3b3;
     outline-width: 10em;
     border:none;
-
-}
+        }
+ .topnav {
+    overflow: hidden;
+    background-color: #212121;
+  }
+  
+  .topnav a {
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color:  #191414;
+  }
+  
+  .topnav a.active {
+    background-color: #1db954;
+    color: white;
+  }
 </style>
     </head>
     <body>
+        <div class="topnav">
+            <a href="{{ url_for('.login') }}">Log Out</a>
+            <a href="{{ url_for('.help') }}">Help</a>
+            <a href="{{ url_for('.language') }}">Change Language</a>
+            <a href="suggested_playlistsSpanish">Recomended</a>
+            <a class="active" href="{{ url_for('.playlist')}}">Inspect Playlist</a>
+        </div>
         
         <input id = "btnBack" autocomplete="" class="back_button" name = "btnBack" type = "button" value = "&#8592" onclick="history.back()">
 
