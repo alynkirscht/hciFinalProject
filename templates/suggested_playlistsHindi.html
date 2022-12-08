@@ -22,7 +22,8 @@
             <a href="{{ url_for('.language') }}">Change Language</a>
             <a class="active" href="suggested_playlistsHindi">Recomended</a>
         </div>
-    <h1>Your suggested Music</h1>
+        <input id = "btnBack" autocomplete="" class="back_button" name = "btnBack" type = "button" value = "&#8592" onclick="history.back()">
+    <h1>Your Suggested Music</h1>
     <div class="playlist">
     <h2>Playlists</h2>
     <div class="corner">
@@ -33,38 +34,38 @@
     <div class="flex-container">
         <a class="activePage" href="{{ url_for('.playlist') }}">
         <figure>
-            <img alt='Beginner Spanish' src='..\static\begspan.png'>
+            <img alt='Beginner Hindi' src='..\static\3.png'>
             
-            <figcaption>Beginner Spanish</figcaption></a>
+            <figcaption>Beginner Hindi</figcaption></a>
             <img class='heart' alt='like this song' src='..\static\heart-regular.svg' onclick="chngimg(this)">
         </figure>
         
         
         <a class="activePage" href="{{ url_for('.playlist') }}">
         <figure>
-            <img alt='Intermediate Spanish' src='..\static\interspan.png'>
-            <figcaption>Intermediate Spanish</figcaption></a>
+            <img alt='Intermediate Hindi' src='..\static\4.png'>
+            <figcaption>Intermediate Hindi</figcaption></a>
             <img class='heart' alt='like this song' src='..\static\heart-regular.svg' onclick="chngimg(this)">
         </figure>
     
     <a class="activePage" href="{{ url_for('.playlist') }}">
         <figure>
-            <img alt='Advanced Spanish' src='..\static\advanspan.png'>
-            <figcaption>Advanced Spanish</figcaption></a>
+            <img alt='Advanced Hindi' src='..\static\5.png'>
+            <figcaption>Advanced Hindi</figcaption></a>
             <img class='heart' alt='like this song' src='..\static\heart-regular.svg' onclick="chngimg(this)">
 
         </figure> 
     
     <a class="activePage" href="{{ url_for('.playlist') }}">
         <figure>
-            <img alt='Dance in Spanish' src='..\static\bailar.png'>
+            <img alt='Dance in Spanish' src='..\static\2.png'>
             <figcaption>Dance in Spanish</figcaption></a>
             <img class='heart' alt='like this song' src='..\static\heart-regular.svg' onclick="chngimg(this)">
         </figure>
         
         <a class="activePage" href="{{ url_for('.playlist') }}">
         <figure>
-            <img alt='Classics' src='..\static\classics.png'>
+            <img alt='Classics' src='..\static\1.png'>
             <figcaption>Classics</figcaption></a>
             <img class='heart' alt='like this song' src='..\static\heart-regular.svg' onclick="chngimg(this)">
         </figure>
@@ -79,34 +80,34 @@
 
     <h2>Songs</h2>
     <div class="flex-container">
-        <a class="activePage" href="https://www.youtube.com/watch?v=yO-XR4qXm1k&ab_channel=BadBunny-Topic">
+        <a class="activePage" href="https://www.youtube.com/watch?v=M4EZHGFK-1c&ab_channel=T-Series">
         <figure>
-            <img alt='Efecto by Bad Bunny' src='..\static\badbunny.jpg'>
-            <figcaption>Efecto</figcaption></a>
+            <img alt='Chammak Challo by Akon, Hamsika Iyer' src='..\static\chammak.jpg'>
+            <figcaption>Chammak Challo</figcaption></a>
             <img class='heart' alt='like this song' src='..\static\heart-regular.svg' onclick="chngimg(this)">
         </figure>
-        <a class="activePage" href="https://www.youtube.com/watch?v=vUONWl8uBxM&ab_channel=LatinNow">
+        <a class="activePage" href="https://www.youtube.com/watch?v=Ov6PNYjWYi8&ab_channel=SonyMusicIndia">
         <figure>
-            <img alt='Hawái by Maluma' src='..\static\maluma.jpg'>
-            <figcaption>Hawái</figcaption></a>
+            <img alt='Load Hai by Raftaar, Yunan' src='..\static\loadhai.jpg'>
+            <figcaption>Load Hai</figcaption></a>
             <img class='heart' alt='like this song' src='..\static\heart-regular.svg' onclick="chngimg(this)">
         </figure>
-        <a class="activePage" href="https://www.youtube.com/watch?v=aDCcLQto5BM&ab_channel=DannyOcean">
+        <a class="activePage" href="https://www.youtube.com/watch?v=2ll4IA146YI&ab_channel=T-Series">
         <figure>
-            <img alt='Me Rehúso by Danny Ocean' src='..\static\danny.jpg'>
-            <figcaption>Me Rehúso</figcaption></a>
+            <img alt='Hawa Hawa by Mika Singh, Prakriti Kakar, Gourov-Roshin' src='..\static\hawa.jpg'>
+            <figcaption>Hawa Hawa</figcaption></a>
             <img class='heart' alt='like this song' src='..\static\heart-regular.svg' onclick="chngimg(this)">
         </figure> 
-        <a class="activePage" href="https://www.youtube.com/watch?v=tK4ioPhpal4&ab_channel=BadBunny">
+        <a class="activePage" href="https://www.youtube.com/watch?v=3SWc5G8Gx7E&ab_channel=ZeeMusicCompany">
         <figure>
-            <img alt='PA’ ROMPERLA by Bad Bunny and Don Omar' src='..\static\disk.jpg'>
-            <figcaption>PA’ ROMPERLA</figcaption></a>
+            <img alt='Tareefan by QARAN, Badshah' src='..\static\tareefan.jpg'>
+            <figcaption>Tareefan</figcaption></a>
             <img class='heart' alt='like this song' src='..\static\heart-regular.svg' onclick="chngimg(this)">
         </figure>
-        <a class="activePage" href="https://www.youtube.com/watch?v=u8jb8z3zUJM&ab_channel=Ozuna">
+        <a class="activePage" href="https://www.youtube.com/watch?v=0VwgpYJ4q38&ab_channel=T-Series">
         <figure>
-            <img alt='Hey Mor by Ozuna' src='..\static\ozuna.jpg'>
-            <figcaption>Hey Mor</figcaption></a>
+            <img alt='Uravashi by Yo Yo Honey Singh' src='..\static\Uravashi.jpg'>
+            <figcaption>Uravashi</figcaption></a>
             <img class='heart' alt='like this song' src='..\static\heart-regular.svg' onclick="chngimg(this)">
         </figure>
     </div>

@@ -22,7 +22,8 @@
             <a href="{{ url_for('.language') }}">Change Language</a>
             <a class="active" href="suggested_playlistsSpanish">Recomended</a>
         </div>
-    <h1>Your suggested Music</h1>
+        <input id = "btnBack" autocomplete="" class="back_button" name = "btnBack" type = "button" value = "&#8592" onclick="history.back()">
+    <h1>Your Suggested Music</h1>
     <div class="playlist">
     <h2>Playlists</h2>
     <form method="POST" action="newPlaylist"class="corner">
