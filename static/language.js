@@ -46,10 +46,10 @@ function loadingBar() {
             window.location.replace("suggested_playlists_spanish");
         }
         else if (langRec == "Hindi"){
-            window.location.replace("suggested_playlists_hindi")    
+            window.location.replace("suggested_playlists_spanish")    
         }
         else if (langRec == "Spanish+Hindi"){
-            window.location.replace("suggested_playlists_spanishHindi") 
+            window.location.replace("suggested_playlistsSpanishHindi") 
         }
             
       }
