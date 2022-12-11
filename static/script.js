@@ -162,6 +162,36 @@ function addSong(){
   */
 }
 
+function share(){
+  var firstNode = document.getElementById("first-node");
+  var divShare= document.createElement("div")
+  divShare.classList.add("sm_list");
+  firstNode.append(divShare);
+
+  var facebook_img = document.createElement("img");
+  facebook_img.classList.add("social-media");
+  facebook_img.alt = "facebook";
+  facebook_img.src = "..\\static\\facebook.svg";
+  divShare.appendChild(facebook_img);
+
+  var email_img = document.createElement("img");
+  email_img.classList.add("social-media");
+  email_img.alt = "email";
+  email_img.src = "..\\static\\envelope-solid.svg";
+  divShare.appendChild(email_img);
+
+  var twitter_img = document.createElement("img");
+  twitter_img.classList.add("social-media");
+  twitter_img.alt = "twitter";
+  twitter_img.src = "..\\static\\twitter.svg";
+  divShare.appendChild(twitter_img);
+
+  var more_img = document.createElement("img");
+  more_img.classList.add("social-media");
+  more_img.alt = "more sharing options";
+  more_img.src = "..\\static\\circle-plus-solid.svg";
+  divShare.appendChild(more_img);
+} 
 
 
 
