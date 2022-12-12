@@ -1,4 +1,3 @@
-
 body{
     font-family: 'Poppins',sans-serif;
     }
@@ -38,9 +37,9 @@ body{
     .grid-container {
     display: flex;
     flex-direction: column;
-    padding: 10px;
+    padding: .625em;
     background-color: #212121;
-    border-radius: 15px;
+    border-radius: .937em;
     align-items: center;
     }
     
@@ -90,9 +89,9 @@ body{
     
     .grid-container > figure > figcaption {
     background-color: #b3b3b3;
-    border-radius: 25px;
+    border-radius: 1.56em;
     width: 50mm;
-    margin: 10px;
+    margin: .625em;
     text-align: center;
     }
     .white{
@@ -101,7 +100,7 @@ body{
     padding-left: 2em;
     padding-right: 4em;
     padding-top: 2em;
-    width: 70px;
+    width: 4.375em;
     overflow: hidden;
     white-space: nowrap;
     /* max-width: 10em; */
@@ -128,7 +127,7 @@ body{
     
     h1{
     text-align: center;
-    font-size:50px;
+    font-size:3.125em;
     padding: .5em;
     
     }
@@ -157,13 +156,13 @@ body{
     }
     
     .topnav a {
-    float: right;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    }
+float: right;
+color: #f2f2f2;
+text-align: center;
+padding: .875em .9em;
+text-decoration: none;
+font-size: 1.06em;
+}
     
     .topnav a:hover {
     background-color: #ddd;
@@ -172,7 +171,7 @@ body{
     
     .topnav a.active {
     background-color: #1db954;
-    color: white;
+    color: black;
     }
     
     
