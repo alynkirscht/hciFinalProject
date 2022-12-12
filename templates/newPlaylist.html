@@ -34,20 +34,23 @@
         </div>
         </div>
       </form>
+      <div id="first-node">
     <div class="topcontainer">
     <div class="icon-and-link">
-        <img class='share' alt='edit' src='..\static\pen-to-square-solid.svg'>
-        <p>Edit</p>
+        <img class='share' alt='edit' src='..\static\pen-to-square-solid.svg' onclick=edit(this)>
+        <p id="edit-p">Edit</p>
     </div>
     <div class="icon-and-link">
-        <img class='share' alt='edit' src='..\static\share-solid.svg'>
-        <p>Share</p>
+        <img class='share' alt='edit' src='..\static\share-solid.svg' onclick=share(this)> 
+        <p id="share-p">Share</p>
     </div>
     <div class="icon-and-link">
         <img class='heart' class="share" alt='like this song' src='..\static\heart-regular.svg' onclick="chngimg(this)">
     <p>Save</p>
     </div>
     </div>
+    </div>
+    
     <div class="grid-container" id="grid-container">
        
     </div>

@@ -200,12 +200,12 @@
     <div id="first-node">
    <div class="topcontainer" id = "topcontainer">
     <div class="icon-and-link">
-        <img class='share' alt='edit' src='..\static\pen-to-square-solid.svg'>
-        <p>Edit</p>
+        <img class='share' alt='edit' src='..\static\pen-to-square-solid.svg' onclick="edit(this)">
+        <p id="edit-p">Edit</p>
     </div>
     <div class="icon-and-link">
-        <img class='share' alt='share' src='..\static\share-solid.svg' id = "share" onclick="share()">
-        <p>Share</p>
+        <img class='share' alt='share' src='..\static\share-solid.svg' id = "share" onclick="share(this)">
+        <p id="share-p">Share</p>
     </div>
     <div class="icon-and-link">
         <img class='heart' class="share" alt='like this song' src='..\static\heart-regular.svg' onclick="chngimg(this)">
@@ -220,7 +220,6 @@
             <img alt='Dura by Daddy Yankee' src='..\static\dura.jpg'>
             <img class='play' alt='play this song' src='..\static\play-solid.svg' onclick="changeplay(this)">
             <img class='heart' alt='like this song' src='..\static\heart-regular.svg' onclick="chngimg(this)">
-            <img class='x' alt='get rid of this song' src='..\static\x-solid.svg' onclick="hideElement(this)">
             <div class="white">
             <figcaption>Dura</figcaption>
             <p>Daddy Yankee</p>
@@ -232,7 +231,6 @@
             <img alt='TUDO BOM' src='..\static\tudo.jpg'>
             <img class='play' alt='play this song' src='..\static\play-solid.svg' onclick="changeplay(this)">
             <img class='heart' alt='like this song' src='..\static\heart-regular.svg' onclick="chngimg(this)">
-            <img class='x' alt='get rid of this song' src='..\static\x-solid.svg' onclick="hideElement(this)">
             <div class="white">
             <figcaption>TUDO BOM</figcaption>
             <p>J Balvin</p>
@@ -244,7 +242,6 @@
             <img alt='Nervita by Bad Bunny' src='..\static\badbunny.jpg'>
             <img class='play' alt='play this song' src='..\static\play-solid.svg' onclick="changeplay(this)">
             <img class='heart' alt='like this song' src='..\static\heart-regular.svg' onclick="chngimg(this)">
-            <img class='x' alt='get rid of this song' src='..\static\x-solid.svg' onclick="hideElement(this)">
             <div class="white">
             <figcaption>Neverita</figcaption>
             <p>Bad Bunny</p>
@@ -256,7 +253,6 @@
             <img alt='El Prestamo' src='..\static\prest.jpg'>
             <img class='play' alt='play this song' src='..\static\play-solid.svg' onclick="changeplay(this)">
             <img class='heart' alt='like this song' src='..\static\heart-regular.svg' onclick="chngimg(this)">
-            <img class='x' alt='get rid of this song' src='..\static\x-solid.svg' onclick="hideElement(this)">
             <div class="white">
             <figcaption>El Prestamo</figcaption>
             <p>Maluma</p>
@@ -269,7 +265,6 @@
             <img alt='Danza Kuduro' src='..\static\danza.jpg'>
             <img class='play' alt='play this song' src='..\static\play-solid.svg' onclick="changeplay(this)">
             <img class='heart' alt='like this song' src='..\static\heart-regular.svg' onclick="chngimg(this)">
-            <img class='x' alt='get rid of this song' src='..\static\x-solid.svg' onclick="hideElement(this)">
             <div class="white">
             <figcaption>Danza Kuduro</figcaption>
             <p>Don Omar</p>
@@ -282,7 +277,6 @@
             <img alt='Dura by Daddy Yankee' src='..\static\dura.jpg'>
             <img class='play' alt='play this song' src='..\static\play-solid.svg' onclick="changeplay(this)">
             <img class='heart' alt='like this song' src='..\static\heart-regular.svg' onclick="chngimg(this)">
-            <img class='x' alt='get rid of this song' src='..\static\x-solid.svg' onclick="hideElement(this)">
             <div class="white">
             <figcaption>Dura</figcaption>
             <p>Daddy Yankee</p>
@@ -294,7 +288,6 @@
             <img alt='TUDO BOM' src='..\static\tudo.jpg'>
             <img class='play' alt='play this song' src='..\static\play-solid.svg' onclick="changeplay(this)">
             <img class='heart' alt='like this song' src='..\static\heart-regular.svg' onclick="chngimg(this)">
-            <img class='x' alt='get rid of this song' src='..\static\x-solid.svg' onclick="hideElement(this)">
             <div class="white">
             <figcaption>TUDO BOM</figcaption>
             <p>J Balvin</p>
@@ -306,7 +299,6 @@
             <img alt='Nervita by Bad Bunny' src='..\static\badbunny.jpg'>
             <img class='play' alt='play this song' src='..\static\play-solid.svg' onclick="changeplay(this)">
             <img class='heart' alt='like this song' src='..\static\heart-regular.svg' onclick="chngimg(this)">
-            <img class='x' alt='get rid of this song' src='..\static\x-solid.svg' onclick="hideElement(this)">
             <div class="white">
             <figcaption>Neverita</figcaption>
             <p>Bad Bunny</p>
@@ -318,7 +310,6 @@
             <img alt='El Prestamo' src='..\static\prest.jpg'>
             <img class='play' alt='play this song' src='..\static\play-solid.svg' onclick="changeplay(this)">
             <img class='heart' alt='like this song' src='..\static\heart-regular.svg' onclick="chngimg(this)">
-            <img class='x' alt='get rid of this song' src='..\static\x-solid.svg' onclick="hideElement(this)">
             <div class="white">
             <figcaption>El Prestamo</figcaption>
             <p>Maluma</p>
@@ -331,7 +322,6 @@
             <img alt='Danza Kuduro' src='..\static\danza.jpg'>
             <img class='play' alt='play this song' src='..\static\play-solid.svg' onclick="changeplay(this)">
             <img class='heart' alt='like this song' src='..\static\heart-regular.svg' onclick="chngimg(this)">
-            <img class='x' alt='get rid of this song' src='..\static\x-solid.svg' onclick="hideElement(this)">
             <div class="white">
             <figcaption>Danza Kuduro</figcaption>
             <p>Don Omar</p>
