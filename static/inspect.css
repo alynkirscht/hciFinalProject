@@ -21,6 +21,12 @@ body{
     padding-right: 20em;
     align-content: center;
     }
+
+    a:focus, button:focus, input:focus {
+        outline: 5px solid crimson;
+        background-color: white;
+        color: black;
+    }
     figure{
     float: center;
     }
@@ -216,4 +222,27 @@ body{
     align-items: center;
     align-content: center;
     align-self: center;
-    }  
+    } 
+
+
+form *{
+    font-family: 'Poppins',sans-serif;
+    color: #ffffff;
+    letter-spacing: 0.02em;
+    border: none;
+}
+
+label{
+    display: block;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+#query {
+  height: 3.5em;
+  background-color: rgb(59, 59, 65);
+  margin-top: .5em;
+  margin-bottom: 1em;
+  font-size: .9em;
+  font-weight: 300;
+}
