@@ -1,82 +1,82 @@
 h1{
-    font-family: 'Poppins',sans-serif;
-    font-weight: 500;
-    line-height: 1em;
-    text-align: center;
-    font-size: 2em;
-    color: #b3b3b3;
-    
-}
-
-h2{
-    font-family: 'Poppins',sans-serif;
-    color: #b3b3b3;
-}
-p{
   font-family: 'Poppins',sans-serif;
   font-weight: 500;
   line-height: 1em;
   text-align: center;
+  font-size: 2em;
   color: #b3b3b3;
-  font-size: 1em;
+  
+}
+
+h2{
+  font-family: 'Poppins',sans-serif;
+  color: #b3b3b3;
+}
+p{
+font-family: 'Poppins',sans-serif;
+font-weight: 500;
+line-height: 1em;
+text-align: center;
+color: #b3b3b3;
+font-size: 1em;
 }
 article{
-  background-color: #212121;
+background-color: #212121;
 }
 .flex-container{
-    justify-content: center;
+  justify-content: center;
 }
 .playlist{
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 
 .corner{
-    padding-left: 67em;
-    display: flex;
-    flex-direction: row;
-    padding-top: 2em;
+  padding-left: 67em;
+  display: flex;
+  flex-direction: row;
+  padding-top: 2em;
 
 }
 
 .playlist_button {
-  background-color: #4ac776;
-  color: black;
-  font-size: 1em;
-  font-weight: 600;
-  border-radius: .5em;
-  cursor: pointer;
-  height: 3.5em;
-  margin-top: .5em;
-  margin-bottom: 1em;
-  font-family: 'Poppins',sans-serif;
-  letter-spacing: 0.02em;
-  border: none;
+background-color: #4ac776;
+color: black;
+font-size: 1em;
+font-weight: 600;
+border-radius: .5em;
+cursor: pointer;
+height: 3.5em;
+margin-top: .5em;
+margin-bottom: 1em;
+font-family: 'Poppins',sans-serif;
+letter-spacing: 0.02em;
+border: none;
 }
 
 
 
 a {
-    font-family: 'Poppins',sans-serif;
-    color: #1db954;
-    text-decoration: none;
+  font-family: 'Poppins',sans-serif;
+  color: #1db954;
+  text-decoration: none;
 }
 a > figure > figcaption{
-    width: 40mm;
-    margin: 10px;
-    text-decoration: none;
+  width: 40mm;
+  margin: 10px;
+  text-decoration: none;
 
 }
 body {
-    background-color: #191414;
+  background-color: #191414;
 }
 figure{
-    float: right;
-    text-align: center;
+  float: right;
+  text-align: center;
 }
 img{
-    max-width: 45mm;
+  max-width: 45mm;
 }
 .flex-container {
 display: flex;
@@ -96,115 +96,114 @@ text-align: center;
 
 
 svg{
-    cursor:pointer; overflow:visible; width:60px;
-    /* #heart{transform-origin:center; animation:animateHeartOut .3s linear forwards;}
-    #main-circ{transform-origin:29.5px 29.5px;} */
-  }
-  
-  #checkbox{display:none;}
-  
+  cursor:pointer; overflow:visible; width:60px;
+  /* #heart{transform-origin:center; animation:animateHeartOut .3s linear forwards;}
+  #main-circ{transform-origin:29.5px 29.5px;} */
+}
 
-  .heart{
-    filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(23deg) brightness(108%) contrast(101%);
-    width: 10mm;
+#checkbox{display:none;}
 
-  }
 
-  .icon{
-        filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(23deg) brightness(108%) contrast(101%);
-        width: 4mm;
-        padding-left: .6em;
-        padding-top: 1em;
-  }
+.heart{
+  filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(23deg) brightness(108%) contrast(101%);
+  width: 10mm;
 
-  figure {
-   position: relative;
+}
+
+.icon{
+      filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(23deg) brightness(108%) contrast(101%);
+      width: 4mm;
+      padding-left: .6em;
+      padding-top: 1em;
+}
+
+figure {
+ position: relative;
 }
 
 
 figure > .heart{
-    position: absolute;
-    bottom: 30px;
-    left: 5px;
+  position: absolute;
+  bottom: 30px;
+  left: 5px;
 }
 
 
 
 .hamburger {
-    position: fixed;
-    z-index: 100;
-    top: 1rem;
-    right: 1rem;
-    padding: 4px;
-    border: black solid 1px;
-    background: white;
-    cursor: pointer;
-  }
+  position: fixed;
+  z-index: 100;
+  top: 1rem;
+  right: 1rem;
+  padding: 4px;
+  border: black solid 1px;
+  background: white;
+  cursor: pointer;
+}
 
-  .closeIcon {
-    display: none;
-  }
+.closeIcon {
+  display: none;
+}
 
 
-  .menu {
-    position: fixed;
-    transform: translateY(-100%);
-    transition: transform 0.2s;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 99;
-    background: black;
-    color: white;
-    list-style: none;
-    padding-top: 4rem;
-  }
+.menu {
+  position: fixed;
+  transform: translateY(-100%);
+  transition: transform 0.2s;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  background: black;
+  color: white;
+  list-style: none;
+  padding-top: 4rem;
+}
 
-  .showMenu {
-    transform: translateY(0);
-  }
+.showMenu {
+  transform: translateY(0);
+}
 
 
 
 a:focus, button:focus, input:focus {
-    outline: 5px solid crimson;
-    background-color: white;
-    color: black;
+  outline: 5px solid crimson;
+  background-color: white;
+  color: black;
 }
 
 .back_button{
-  width: 10%;
-  height: 5%;
-  font-size:5em !important;
-  background-color: #191414;
-  outline: #b3b3b3;
-  border:none;
-  color: #b3b3b3;
+width: 10%;
+height: 5%;
+font-size:5em !important;
+background-color: #191414;
+outline: #b3b3b3;
+border:none;
+color: #b3b3b3;
 
 }
 
 .topnav {
-    overflow: hidden;
-    background-color: #212121;
-  }
-  
-  .topnav a {
-    float: right;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  
-  .topnav a:hover {
-    background-color: #ddd;
-    color:  #191414;
-  }
-  
-  .topnav a.active {
-    background-color: #1db954;
-    color: white;
-  }
+  overflow: hidden;
+  background-color: #212121;
+}
 
+.topnav a {
+float: right;
+color: #f2f2f2;
+text-align: center;
+padding: .875em .9em;
+text-decoration: none;
+font-size: 1.06em;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color:  #191414;
+}
+
+.topnav a.active {
+  background-color: #1db954;
+  color: black;
+}
